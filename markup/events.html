@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=970">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <title>Airtribune</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      window.ATDATA = {};
+      window.ATDATA.eventLists = {
+        "current-events": {
+            "title": "Magical header with current event",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 18, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 42, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 19, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 40, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 18.8, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 42, "city": "Cameli"}]
+        },
+        "next-events": {
+            "title": "Magical header with next event",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 15, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 41, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 16, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 42, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 14, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 43, "city": "Cameli"}]
+        },
+        "past-events": {
+            "title": "Magical header with past events",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 18, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 45, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 20, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 44, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 21, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 42, "city": "Cameli"}]
+        }
+      }
+      window.ATDATA.carousels = {
+        "photoBlock01": [
+          {img:"img/slider/delta-header-1.jpg",alt:"Photo 1",copyright:"Delta Club Annecy",copyrightLink:"http://dca.ffvl.fr"},
+          {img:"img/slider/delta-header-2.jpg",alt:"Photo 2",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+          {img:"img/slider/delta-header-3.jpg",alt:"Photo 3",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+        ],
+        "photoBlock02": [
+          {img:"img/slider/delta-header-4.jpg",alt:"Photo 1",copyright:"Delta Club Annecy",copyrightLink:"http://dca.ffvl.fr"},
+          {img:"img/slider/delta-header-5.jpg",alt:"Photo 2",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+          {img:"img/slider/delta-header-6.png",alt:"Photo 3",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+        ],
+        "contentBlock01": [
+          {img:"img/slider/car-01.jpg",thumb:"img/slider/car-01-thumb.jpg"},
+          {img:"img/slider/car-02.jpg",thumb:"img/slider/car-02-thumb.jpg"},
+          {img:"img/slider/car-03.jpg",thumb:"img/slider/car-03-thumb.jpg"},
+          {img:"img/slider/car-04.jpg",thumb:"img/slider/car-04-thumb.jpg"},
+          {img:"img/slider/car-05.jpg",thumb:"img/slider/car-05-thumb.jpg"},
+          {img:"img/slider/car-06.jpg",thumb:"img/slider/car-06-thumb.jpg"},
+          {img:"img/slider/car-07.jpg",thumb:"img/slider/car-07-thumb.jpg"},
+          {img:"img/slider/car-08.jpg",thumb:"img/slider/car-08-thumb.jpg"},
+          {img:"http://player.vimeo.com/video/76021157",thumb:"http://i.vimeocdn.com/video/452121532_640.jpg"}, // http://vimeo.com/api/v2/video/76021157.json - отсюда брать url на превью
+          {img:"http://www.youtube.com/embed/bWe8PRsW4T0",thumb:"http://img.youtube.com/vi/bWe8PRsW4T0/0.jpg"}
+        ]
+      }
+
+
+      window.ATDATA.minimap = {
+        "hotelPosition01": [ 
+          {"lat":18.9,"lon":43.5,"title":"Super Hotel"}
+        ]
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="header-panel clearfix">
+      <div class="container">
+
+        <div class="header-panel-inner">
+
+          <div class="logo">
+            <a title="Main page" href="#">
+              <img alt="Airtribune.com" src="img/logo.png" class="site-logo image-style-none">
+            </a>
+          </div>
+
+          <div class="right-panel pull-right">
+
+            <div class="nav-part">
+
+              <div class="require-js-model" data-params='{"name":"dropdown-menu"}'>
+                <div class="dd-parent-container">
+                  <div class="btn btn-default btn-mm dd-parent" data-bind="click:switchCollapse,css:{'active':show}">Events</div>
+                  <div class="dd-item main-menu-item" data-bind="css:{'dd-show':show}" data-width-el=".dd-parent">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <ul class="dd-menu clearfix">
+                          <li>
+                            <a href="#">For organizers</a>
+                          </li>
+                          <li>
+                            <a href="#">For sponsors</a>
+                          </li>
+                          <li>
+                            <a href="#">For pilots</a>
+                          </li>
+                          <li>
+                            <a href="#">For viewers</a>
+                          </li>
+                          <li>
+                            <a href="#">For clubs</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="search-part">
+              <input type="text" placeholder="People search" class="form-control">
+            </div>
+
+            <div class="magic-action-part">
+              <div class="btn-group ">
+                <div class="dd-parent-container btn-group require-js-model" data-params='{"name":"dropdown-menu"}'>
+
+                  <div type="button" class="btn btn-info btn-lang dd-parent" data-bind="click:switchCollapse,css:{'active':show}" data-item="">
+                    <div class="countryflag countryflag-us"></div>
+                  </div>
+
+                  <div class="dd-item" data-bind="css:{'dd-show':show}" data-width-el=".magic-action-part">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <ul class="dd-langs clearfix">
+                          <li><a lang="bg" class="language-link" href="#"><div class="countryflag countryflag-bg"></div>bg</a></li>
+                          <li><a lang="hr" class="language-link" href="#"><div class="countryflag countryflag-hr"></div>hr</a></li>
+                          <li><a lang="en" class="language-link" href="#"><div class="countryflag countryflag-gb"></div>en</a></li>
+                          <li><a lang="fr" class="language-link" href="#"><div class="countryflag countryflag-fr"></div>fr</a></li>
+                          <li><a lang="de" class="language-link" href="#"><div class="countryflag countryflag-de"></div>de</a></li>
+                          <li><a lang="it" class="language-link" href="#"><div class="countryflag countryflag-it"></div>it</a></li>
+                          <li><a lang="ja" class="language-link" href="#"><div class="countryflag countryflag-jp"></div>ja</a></li>
+                          <li><a lang="pl" class="language-link" href="#"><div class="countryflag countryflag-pl"></div>pl</a></li>
+                          <li><a lang="pt" class="language-link" href="#"><div class="countryflag countryflag-pt"></div>pt</a></li>
+                          <li><a lang="ru" class="language-link" href="#"><div class="countryflag countryflag-ru"></div>ru</a></li>
+                          <li><a lang="sr" class="language-link" href="#"><div class="countryflag countryflag-rs"></div>sr</a></li>
+                          <li><a lang="sl" class="language-link" href="#"><div class="countryflag countryflag-si"></div>sl</a></li>
+                          <li><a lang="es" class="language-link" href="#"><div class="countryflag countryflag-es"></div>es</a></li>
+                          <li><a lang="tr" class="language-link" href="#"><div class="countryflag countryflag-tr"></div>tr</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="dd-parent-container btn-group require-js-model" data-params='{"name":"dropdown-menu"}'>
+
+                  <div type="button" class="btn btn-info btn-auth dd-parent" data-bind="click:switchCollapse,css:{'active':show}">
+                    Sign in
+                  </div>
+
+                  <div class="dd-item" data-bind="css:{'dd-show':show}" data-width-el=".magic-action-part">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <div class="dd-signin clearfix">
+                          <form action="#">
+
+                            <div class="form-item">
+                              <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-item">
+                              <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-item clearfix">
+                              <button type="button" class="btn btn-default btn-fb pull-left">Facebook login</button>
+                              <button type="button" class="btn btn-primary btn-go pull-right">Go</button>
+                            </div>
+                            <div class="form-item form-password-request clearfix">
+                              <a href="#">Request new password</a>
+                            </div>
+                            <div class="form-item">
+                              <button type="button" class="btn btn-info btn-reg">Register new user</button>
+                            </div>
+                            
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="page-header clearfix">
+      <div class="container">
+        
+        <div class="require-js-model" data-params='{"name":"top","type":"carousel","id":"photoBlock01"}'>
+          <div class="carousel-part clearfix" data-bind="visible:isReady" style="display:none">
+            <div class="carousel slide" data-bind="css:{'carousel-collapsed':collapsed}">
+              <div class="carousel-inner">
+                <!-- ko if: type() == "map" -->
+                  <div class="top-map"></div>
+                  <div class="carousel-header-slogan" data-bind="visible:(mapTitle()||'').length>0">
+                    <div class="img-content">
+                      <p data-bind="text:mapTitle"></p>
+                    </div>
+                  </div>
+                <!-- /ko -->
+                <!-- ko if: type() == "carousel" -->
+                  <div class="carousel-inner" data-bind="foreach:slides">
+                    <div class="item" data-bind="css:{active:$parent.slideId()==$index()}">
+                      <img src="" data-bind="attr:{src:img,alt:alt}" />
+                      <div class="carousel-header-slogan" data-bind="visible:content().length>0">
+                        <div class="img-content">
+                          <p data-bind="text:content"></p>
+                        </div>
+                      </div>
+                      <div class="carousel-label" data-bind="visible:copyright().length>0">
+                        Photo by: <a target="_blank" rel="nofollow" data-bind="attr:{href:copyrightLink},text:copyright"></a>
+                      </div>
+                    </div>
+                  </div>
+                <!-- /ko -->
+              </div>
+              <div class="carousel-collapse" href="#" data-bind="click:switchCollapse">
+                <span class=""></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="breadcrumbs-part">
+          <div class="breadcrumbs">
+            <div class="inline first">
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </div> 
+            <span class="delimiter">&rarr;</span> 
+            <div class="inline">
+              <a href="#">
+                <span>Events</span>
+              </a>
+            </div>
+            <span class="delimiter">&rarr;</span> 
+            <div class="inline">
+              <a href="#">
+                <span>Next</span>
+              </a>
+            </div>
+            <span class="delimiter">&rarr;</span> 
+            <div class="inline">
+              <a href="#">
+                <span>13th FAI European Paragliding Championship</span>
+              </a>
+            </div>
+            <span class="delimiter">&rarr;</span> 
+            <div class="inline">
+              <a href="#">
+                <span>Blog</span>
+              </a>
+            </div> 
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Begin page content -->
+    <div class="page-body clearfix">
+      <div class="container">
+
+        <!-- <div class="clearfix require-js-model" data-params='{"name":"top-carousel-controller"}'>
+          <button class="btn btn-default" data-bind="click:collapse">Collapse Carousel</button>
+          <button class="btn btn-default" data-bind="click:expand">Expand Carousel</button>
+          <button class="btn btn-default" data-bind="click:switchNext">Switch to next slide</button>
+        </div> -->
+
+        <div class="row">
+          <div class="col-main-content">
+            
+            <section class="tabs-wrap">
+              <ul class="nav nav-tabs">
+                <li>
+                  <a href="#blog" data-toggle="tab">Blog</a>
+                </li>
+                <li>
+                  <a href="#info" data-toggle="tab">Info</a>
+                </li>
+                <li>
+                  <a href="#pilots" data-toggle="tab">Pilots</a>
+                </li>
+                <li class="active">
+                  <a href="#eventMap" data-toggle="tab">Map</a>
+                </li>
+                <li class="nav-registration">
+                  <a href="#registration" data-toggle="tab">Registration</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade" id="blog">
+                  <ul class="tab-blog-list">
+                    <li>
+                      <div class="post-data">27 May, 2014</div>
+                      <h2 class="title-tab-pane"><a href="#">Qualified pilots outside Europe list</a></h2>
+                      <p class="text-tab-pane">
+                        We have list of pilots who are qualified from outside of Europe published in the DOWLOADS section.<br/>
+                        <a href="#" class="text-blue">http://airtribune.com/files/pg-contests/6519-13th-fai-european-paraglidi...</a><br/>
+                        Now you can find there two lists - for European piots and pilots from other parts of the world.
+                      </p>
+                      <a href="#" class="link-view_more">View more</a>
+                    </li>
+                    <li>
+                      <div class="post-data">27 May, 2014</div>
+                      <h2 class="title-tab-pane"><a href="#">Qualified pilots outside Europe list</a></h2>
+                      <p class="text-tab-pane">
+                        Dear participants of the 13th FAI European Championship,
+                      </p>
+                      <p class="text-tab-pane">
+                        In accordance with the Local regulations for 13th FAI European Championship (3 - 16 August, Koponik-Raska, Serbia) the entry deadline will be 1st June 2014.<br/>
+                        There is still 6 days until the entry deadline.
+                      </p>
+                      <p class="text-tab-pane">
+                        The following countries haven’t completed registration on official website (
+                        <a href="#" class="text-blue">http://www.airtribune.com/euro2014/pilots</a>
+                        )
+                      </p>
+                      <a href="#" class="link-view_more">View more</a>
+                    </li>
+                    <li>
+                      <div class="post-data">19 May, 2014</div>
+                      <h2 class="title-tab-pane"><a href="#">TV Coverage</a></h2>
+                      <img alt="Airtribune.com" width="100%" height="100%" src="img/events/chrigl-maurer-ech.jpg">
+                      <p class="text-tab-pane">
+                        We are happy to announce that Christian Maurer - X-Alps Champion, and one of the best pilots in the World - will be a member of Swiss team for 13th FAI European Paragliding Championship. So the Swiss Television will come to Kopaonik to cover the event with famous cameramen Niels Dachler. Niels will be not only in Swiss Televisions, but also in others. That's why we expect a great coverage of the event.
+                      </p>
+                      <a href="#" class="link-view_more">View more</a>
+                    </li>
+                    <li>
+                      <div class="post-data">14 May, 2014</div>
+                      <h2 class="title-tab-pane"><a href="#">Qualified pilots list is published!</a></h2>
+                      <p class="text-tab-pane">
+                        We have published the table of pilots qualified for Euro 2014. Please find the file in the Dowloads section. Or click here to get the 
+                        <a href="#" class="text-blue">direct link.</a>
+                      </p>
+                      <a href="#" class="link-view_more">View more</a>
+                    </li>
+                    <li>
+                      <div class="post-data">13 Feb, 2014</div>
+                      <h2 class="title-tab-pane"><a href="#">The registration is open.</a></h2>
+                      <img alt="" width="100%" height="100%" src="img/events/reg.jpg">
+                      <p class="text-tab-pane">
+                        The registration is open. Everybody is welcome!<br/>
+                        We invite pilots to submit their registrations as soon as possible. After pilots are registered the national team leaders will be able to allocate official teams using Airtribune’s FAI 1 team management page.
+                      </p>
+                      <a href="#" class="link-view_more">View more</a>
+                    </li>
+                    <li>
+                      <div class="post-data">21 Jan, 2014</div>
+                      <h2 class="title-tab-pane"><a href="#">Local regulations are approved by CIVL</a></h2>
+                      <p class="text-tab-pane">
+                        Local regulations are now approved by CIVL and are published.
+                      </p>
+                      <a href="#" class="link-view_more">View more</a>
+                    </li>
+                    <li>
+                      <div class="post-data">18 Nov, 2013</div>
+                      <h2 class="title-tab-pane"><a href="#"></a>The web site is open!</a></h2>
+                      <img alt="" width="100%" height="100%" src="img/events/para-euro-2014.png">
+                      <p class="text-tab-pane">
+                        The registration will be be open as soon as we finish all the formalities. Keep an eye on our news!
+                      </p>
+                      <a href="#" class="link-view_more">View more</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade in active" id="info">
+                  <div class="row row-nomargin news-feed">
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">25 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European Paragliding Championship! <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">17 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">5 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European Paragliding Championship! <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin panel-row">
+                    <div class="col-md-6 panel-row-item col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico"></span>
+                          <span class="title-panel-text">Event info</span>
+                        </a>
+                      </h3>
+                      <p>
+                        The main paragliding event of 2014 welcomes you in the middle of Europe in the mountains of Serbian Kopaonik. This European paragliding site has already hosted PWC in 2013 and dozens of PrePWC and Serbianl Nationals, which always were successful.
+                      </p>
+                      <a href="#" class="link-view_more view_more-top">View more</a>
+                    </div>
+                    <div class="col-md-6 panel-row-item col-padding-left">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico flying"></span>
+                          <span class="title-panel-text">Flying site</span>
+                        </a>
+                      </h3>
+                      <p>
+                        Kopaonik is one of the largest mountain ranges of Serbia. It is located in the central part of the country. Its highest mountain - Pančić's Peak - is 2,017 m ASL. Kopaonik is a National park and the major ski resort of Serbia.
+                      </p>
+                      <a href="#" class="link-view_more view_more-top">View more</a>
+                    </div>
+                  </div>
+
+                  <div class="row row-nomargin events-slider carousel-wrapper clearfix require-js-model" data-params='{"name":"carousel","id":"contentBlock01","widgetId":"carousel.1231"}'>
+                    <div class="carousel-container" data-bind="visible:isReady" style="display:none">
+                      <div class="carousel">
+                        <div class="carousel-line" data-bind="foreach:carouselImgs"><img class="carousel-thumb" data-bind="attr:{src:thumb},click:$parent.openPic.bind($parent,$data)"></div>
+                      </div>
+                      <div class="carousel-controls">
+                        <button class="btn btn-default" data-bind="click:moveBack">Back</button>
+                        <button class="btn btn-default" data-bind="click:moveForward">Forward</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="row row-nomargin events-slider">
+                    <ul class="list-reset list-inline events-slider-list">
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-1.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-2.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-3.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-4.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-5.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                    <span class="events-slider-arrow arrow-prew"></span>
+                    <span class="events-slider-arrow arrow-next"></span>
+                  </div> -->
+
+                  <div class="row row-nomargin pilots-schedule">
+                    <div class="col-md-4 col-nopadding">
+                      <ul class="schedule-list">
+                        <li class="count-green">
+                          <span class="schedule-count">0</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Pilots</span>
+                            <span class="schedule-hint">сonfirmed</span>
+                          </span>
+                        </li>
+                        <li class="count-light_blue">
+                          <span class="schedule-count">157</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Pilots</span>
+                            <span class="schedule-hint">total registered</span>
+                          </span>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">View more</a>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="schedule-list">
+                        <li class="count-yellow">
+                          <span class="schedule-count">3</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Accommodation</span>
+                            <span class="schedule-hint">places</span>
+                          </span>
+                        </li>
+                        <li class="count-yellow">
+                          <span class="schedule-count">10</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Activities</span>
+                            <span class="schedule-hint">places</span>
+                          </span>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more link-view_more-left">View more</a>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="list-reset simple-list">
+                        <li>
+                          <a href="#">Selection and entry fee</a>
+                        </li>
+                        <li>
+                          <a href="#">General schedule</a>
+                        </li>
+                        <li>
+                          <a href="#">Daily schedule</a>
+                        </li>
+                        <!-- <li class="open-ok">
+                          <a href="#">Open class allowed</a>
+                        </li> -->
+                        <li class="open-close">
+                          <a href="#">Open class prohibited</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin block-prize">
+                    <div class="col-md-8 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico prize"></span>
+                          <span class="title-panel-text">Prize funds and scoring categories</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset prize-list">
+                        <li>
+                          <span class="prize-item">Overall</span>
+                        </li>
+                        <li>
+                          <span class="prize-item">Women</span>
+                        </li>
+                        <li>
+                          <span class="prize-item">Nations</span>
+                        </li>
+                        <!-- <li>
+                          <a href="#" class="prize-other_items">Offer your prizes</a>
+                        </li> -->
+                      </ul>
+                      <a href="#" class="link-view_more">More information about prizes and categories</a>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico organizers"></span>
+                          <span class="title-panel-text">Organizers</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset organizers-list">
+                        <li>
+                          <a href="#">
+                            <span class="organizers-img-wrap">
+                              <img class="organizers-img" width="40" height="28" src="img/events/200-x-140-vss-eng.gif" alt="">
+                            </span>
+                            <span class="organizers-text">Robert Barateon</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="organizers-img-wrap">
+                              <img class="organizers-img" width="40" height="40" src="img/events/ovuka-zeljko-200_4.jpg" alt="">
+                            </span>
+                            <span class="organizers-text">Tom Manny</span></a>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">More information about organizers</a>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin map-wrapper">
+                    <div class="col-md-8 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico map"></span>
+                          <span class="title-panel-text"> How to get here</span>
+                        </a>
+                      </h3>
+                      <div class="map-wrap">
+                        <div class="minimap-wrapper clearfix require-js-model" data-params='{"name":"minimap","id":"hotelPosition01","widgetId":"minimap.1212"}'>
+                          <div class="minimap" data-bind="visible:isReady" style="display:none;"></div>
+                        </div>
+                        <!-- <img src="img/events/map.jpg" width="450" height="220" alt=""> -->
+                      </div>
+                      <div class="row row-nomargin style-indent">
+                        <div class="col-md-6 col-indent-right">
+                          <div>Hotel Angella, bb 36354 Kopaonik Serbia</div>
+                          <ul class="list-reset list-inline transport-list">
+                            <li class="plane">
+                              <a href="#"></a>
+                            </li>
+                            <li class="bus">
+                              <a href="#"></a>
+                            </li>
+                            <li class="car">
+                              <a href="#"></a>
+                            </li>
+                            <li class="taxi">
+                              <a href="#"></a>
+                            </li>
+                          </ul>
+                          <a href="#" class="link-view_more view_more-indent">View more</a>
+                        </div>
+                        <div class="col-md-6 col-nopadding">                          
+                          <p>Kopaonik is situated some 270 km from Belgrade and it is in South Serbia. We'll organize a transfer from Belgrade to Kopaonik if you ask for it.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico facebook"></span>
+                          <span class="title-panel-text">Facebook</span>
+                        </a>
+                      </h3>
+                      <img class="soc-fb-block" src="img/events/soc-fb-block.png" width="220" height="330" alt="">
+                    </div>
+                  </div>
+                  <div class="row row-nomargin contacts-block">
+                    <div class="col-md-4 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico contacts"></span>
+                          <span class="title-panel-text">Contacts</span>
+                        </a>
+                      </h3>
+                      <div class="row row-nomargin">
+                        <ul class="list-reset contacts-list">
+                          <li>
+                            <h5 class="contacts-list-title">General questions</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Tommy Landington</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">infopressololo@para-sopot2013.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Selestion and antry</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Lin Tinkieva</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Transportation</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Timur Grinev</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Accommodation</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Vasiliy Sankevich</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-nopadding col-margin-indent">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico downloads"></span>
+                          <span class="title-panel-text">Downloads</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset download-list">
+                        <li class="downloads-item pdf">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            <span class="downloads-item-text">Filename.wpt</span>
+                          </a>
+                        </li>
+                        <li class="downloads-item xls">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            <span class="downloads-item-text">Filename.doc</span>
+                          </a>
+                        </li>
+                        <li class="downloads-item xls">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            <span class="downloads-item-text">Waypoints.utm</span>
+                          </a>
+                        </li>
+                        <li class="downloads-item doc">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            <span class="downloads-item-text">Waypoints.geo</span>
+                          </a>
+                        </li>
+                        <li class="downloads-item dem">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            <span class="downloads-item-text">Waypoints.kml</span>
+                          </a>
+                        </li>
+                        <li class="downloads-item dem">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            <span class="downloads-item-text">Waypoints.seey</span>
+                          </a>
+                        </li>
+                        <li class="downloads-item lkm">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            <span class="downloads-item-text">Waypoints.cgps</span>
+                          </a>
+                        </li>
+                        <li class="downloads-item pdf">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            <span class="downloads-item-text">Waypoints.cgps</span>
+                          </a>
+                        </li>
+                        <li class="downloads-item more-downloads">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            More downloads
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 col-indent-left">
+                      <ul class="list-reset list-inline events-soc-list">
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-fb.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-tw.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-g.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-yt.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-v.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-od.jpg" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                      <img class="soc-likes" src="img/events/soc-likes.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pilots"></div>
+                <div class="tab-pane fade" id="eventMap">
+                  <div class="row row-nomargin news-feed">
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">25 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European Paragliding Championship! <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">17 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">5 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European Paragliding Championship! <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin panel-row">
+                    <div class="col-md-6 panel-row-item col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico"></span>
+                          <span class="title-panel-text">Event info</span>
+                        </a>
+                      </h3>
+                      <p>
+                        The main paragliding event of 2014 welcomes you in the middle of Europe in the mountains of Serbian Kopaonik. This European paragliding site has already hosted PWC in 2013 and dozens of PrePWC and Serbianl Nationals, which always were successful.
+                      </p>
+                      <a href="#" class="link-view_more view_more-top">View more</a>
+                    </div>
+                    <div class="col-md-6 panel-row-item">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico flying"></span>
+                          <span class="title-panel-text">Flying site</span>
+                        </a>
+                      </h3>
+                      <p>
+                        Kopaonik is one of the largest mountain ranges of Serbia. It is located in the central part of the country. Its highest mountain - Pančić's Peak - is 2,017 m ASL. Kopaonik is a National park and the major ski resort of Serbia.
+                      </p>
+                      <a href="#" class="link-view_more view_more-top">View more</a>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin events-slider">
+                    <ul class="list-reset list-inline events-slider-list">
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-1.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-2.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-3.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-4.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-5.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                    <span class="events-slider-arrow arrow-prew"></span>
+                    <span class="events-slider-arrow arrow-next"></span>
+                  </div>
+                  <div class="row row-nomargin pilots-schedule">
+                    <div class="col-md-4 col-nopadding">
+                      <ul class="schedule-list">
+                        <li class="count-green">
+                          <span class="schedule-count">25</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Pilots</span>
+                            <span class="schedule-hint">confirmed</span>
+                          </span>
+                        </li>
+                        <li class="count-light_blue">
+                          <span class="schedule-count">888</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Pilots</span>
+                            <span class="schedule-hint">in waiting list</span>
+                          </span>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">View more</a>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="schedule-list">
+                        <li class="count-yellow">
+                          <span class="schedule-count">13</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Accommodation</span>
+                            <span class="schedule-hint">places</span>
+                          </span>
+                        </li>
+                        <li class="count-yellow">
+                          <span class="schedule-count">152</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Activities</span>
+                            <span class="schedule-hint">places</span>
+                          </span>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more link-view_more-left">View more</a>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="simple-list">
+                        <li>
+                          <a href="#">Selection and entry fee</a>
+                        </li>
+                        <li>
+                          <a href="#">General schedule</a>
+                        </li>
+                        <li>
+                          <a href="#">Daily schedule</a>
+                        </li>
+                        <li>
+                          <a href="#">Download rules</a>
+                        </li>
+                        <li class="open-ok">
+                          <a href="#">Open class allowed</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin block-prize">
+                    <div class="col-md-8 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico prize"></span>
+                          <span class="title-panel-text">Prize funds and scoring categories</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset prize-list">
+                        <li>
+                          <span class="prize-item">Overall</span>
+                        </li>
+                        <li>
+                          <span class="prize-item">Women</span>
+                        </li>
+                        <li>
+                          <span class="prize-item">Nations</span>
+                        </li>
+                        <li>
+                          <a href="#" class="prize-other_items">Offer your prizes</a>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">More information about prizes and categories</a>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico organizers"></span>
+                          <span class="title-panel-text">Organizers</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset organizers-list">
+                        <li>
+                          <a href="#">
+                            <span class="organizers-img-wrap">
+                              <img class="organizers-img" width="40" height="28" src="img/events/200-x-140-vss-eng.gif" alt="">
+                            </span>
+                            <span class="organizers-text">Robert Barateon</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="organizers-img-wrap">
+                              <img class="organizers-img" width="40" height="40" src="img/events/ovuka-zeljko-200_4.jpg" alt="">
+                            </span>
+                            <span class="organizers-text">Tom Manny</span></a>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">More information about organizers</a>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin">
+                    <div class="col-md-8 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico map"></span>
+                          <span class="title-panel-text"> How to get here</span>
+                        </a>
+                      </h3> 
+                      <div class="row row-nomargin">
+                        <div class="col-md-6 col-nopadding">
+                          <div>Hotel Angella, bb 36354 Kopaonik Serbia</div>
+                          <ul class="list-reset list-inline transport-list">
+                            <li class="plane">
+                              <a href="#"></a>
+                            </li>
+                            <li class="bus">
+                              <a href="#"></a>
+                            </li>
+                            <li class="car">
+                              <a href="#"></a>
+                            </li>
+                            <li class="taxi">
+                              <a href="#"></a>
+                            </li>
+                          </ul>
+                          <a href="#" class="link-view_more">View more</a>
+                        </div>
+                        <div class="col-md-6">                          
+                          <p>Kopaonik is situated some 270 km from Belgrade and it is in South Serbia. We'll organize a transfer from Belgrade to Kopaonik if you ask for it.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico facebook"></span>
+                          <span class="title-panel-text">Facebook</span>
+                        </a>
+                      </h3>
+                      <img src="img/events/soc-fb-block.png" width="220" height="330" alt="">
+                    </div>
+                  </div>
+                  <div class="row row-nomargin contacts-block">
+                    <div class="col-md-4 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico contacts"></span>
+                          <span class="title-panel-text">Contacts</span>
+                        </a>
+                      </h3>
+                      <div class="row row-nomargin">
+                        <ul class="list-reset contacts-list">
+                          <li>
+                            <h5 class="contacts-list-title">General questions</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Tommy Landington</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">infopressololo@para-sopot2013.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Selestion and antry</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Lin Tinkieva</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Transportation</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Timur Grinev</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Accommodation</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Vasiliy Sankevich</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico downloads"></span>
+                          <span class="title-panel-text">Downloads</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset download-list">
+                        <li>
+                          <a href="#">Filename.wpt</a>
+                        </li>
+                        <li>
+                          <a href="#">Filename.doc</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.utm</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.geo</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.kml</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.seey</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.cgps</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.cgps</a>
+                        </li>
+                        <li>
+                          <a href="#">More downloads</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="list-reset list-inline events-soc-list">
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-fb.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-tw.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-g.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-yt.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-v.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-od.jpg" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                      <img class="soc-likes" src="img/events/soc-likes.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="registration"></div>
+              </div>
+              
+            </section>
+
+
+          </div>
+          <div class="col-sidebar">
+            
+            <!-- <div class="header-part clearfix"></div> -->
+
+            <section class="box-style recently-viewed-part clearfix">
+              <h2>Partners</h2>
+              <div class="content">
+              </div>
+            </section>
+
+            <section class="box-style upcoming-events-part clearfix">
+              <h2>Next events</h2>
+              <div class="content">
+              </div>
+            </section>
+            <section class="box-style">
+              <img src="img/events/soc-fb-friends.jpg" alt="">
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-content contact-part">
+            <div class="logo"><img alt="" src="img/logo-lower.png"></div>
+            <p>Airtribune is a mobile app for your trainings and competitions live tracking.</p>
+
+            <p>Moscow, Russia <br>
+            Ph.: +7 (985) 762-72-38 <br>
+            E-mail: <a href="mailto:info@airtribune.com">info@airtribune.com</a></p>
+          </div>
+          <div class="col-content info-one-part">
+            <div class="title">
+              <a href="#">Mobile application</a>
+            </div>
+            <p>Live track and store your trainings, add descriptions and share them with your friends.</p>
+            <p>Follow your friends trainings in real time and replay.</p>
+            <p>Stay visible during competitions and sports events.</p>
+          </div>
+          <div class="col-content info-two-part">
+            <a href="#" class="title">Competition hosting</a>
+            <p>
+              Publish your event in a multi-lingual format, 
+              f specially designed for paragliding and hang gliding competitions. 
+              Get live tracking embedded! It’s free!
+            </p>
+            <a href="#" class="title">Competition live tracking</a>
+            <p>
+              Live track your event using pilots’ smartphones. 
+              Forget about trackers rent and "hand-in/collect" mess.
+            </p>
+            <a href="#" class="title">Retrieve service</a>
+            <p>
+              Turn your computer into a situational awareness center of your competition using Airtribune.
+            </p>
+          </div>
+          <div class="col-content social-part">
+            <span class="title">Follow us</span>
+            <div class="list">
+              <ul>
+                <li><a target="_blank" rel="nofollow" class="tw" href="http://twitter.com/airtribune"><span>Twitter</span></a></li>
+                <li><a target="_blank" rel="nofollow" class="vk" href="http://vk.com/airtribune"><span>VKontakte</span></a></li>
+                <li style="display: none;"><a target="_blank" rel="nofollow" class="lj" href="#"><span>Livejournal</span></a></li>
+                <li><a target="_blank" rel="nofollow" class="fb" href="http://www.facebook.com/Airtribune"><span>Facebook</span></a></li>
+                <li style="display: none;"><a target="_blank" rel="nofollow" class="yt" href="#"><span>Youtube</span></a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        <p class="copyright-part">
+          &copy; 2012 Airtribune. All rights reserved &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Lightbox layout -->
+    <div class="lightbox-wrapper require-js-model" data-params='{"name":"lightbox"}'>
+      <div class="lightbox-container" data-bind="visible:isReady()&&isVisible()" style="display:none">
+        <div class="lightbox-fade" data-bind="click:close"></div>
+        <div class="lightbox-window" data-bind="style:{left:containerLeft()+'px',top:containerTop()+'px'}">
+          <div class="lightbox-pic-container" data-bind="style:{width:imgWidth()+'px',height:imgHeight()+'px'}">
+            <!-- ko if: isLoading -->
+              <div class="lightbox-loading"></div>
+            <!-- /ko -->
+            <!-- ko if: !isLoading() && img() -->
+              <!-- ko if: img().isVimeo() -->
+                <iframe class="media-vimeo-player" data-bind="attr:{src:img().img,width:imgWidth()+'px',height:imgHeight()+'px'}" frameborder="0" allowfullscreen ></iframe>
+              <!-- /ko -->
+              <!-- ko if: img().isYoutube() -->
+                <iframe class="media-youtube-player" data-bind="attr:{src:img().img,width:imgWidth()+'px',height:imgHeight()+'px'}" frameborder="0" allowfullscreen></iframe>
+              <!-- /ko -->
+              <!-- ko if: !img().isVideo() -->
+                <img class="lightbox-pic" data-bind="attr:{src:img().img,alt:img().alt},style:{width:imgWidth()+'px',height:imgHeight()+'px'}">
+              <!-- /ko -->
+            <!-- /ko -->
+
+          </div>
+            <div class="lightbox-controls clearfix">
+              <!-- ko if: !isLoading() && img() -->
+                <div class="lightbox-next-prev">
+                  <button class="btn btn-default" data-bind="visible:prevEnabled,click:prev">prev</button>
+                  <button class="btn btn-default" data-bind="visible:nextEnabled,click:next">next</button>
+                </div>
+                <div class="lightbox-close">
+                  <button class="btn btn-default" data-bind="click:close">close</button>
+                </div>
+              <!-- /ko -->
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Lightbox layout -->
+
+    <script type="text/javascript" src="vendor/requirejs/require.js" data-main="js/main"></script>
+  </body>
+</html>

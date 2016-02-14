@@ -1,0 +1,11 @@
+@media (min-width: 768px)
+.form-inline {
+    .form-control {
+        width: (300px / 940px) *100%;
+    }
+}
+.navbar-form {
+    .form-control {
+        width: (300px / 940px) *100%;
+    }
+}

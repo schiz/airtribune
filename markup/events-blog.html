@@ -1,0 +1,2625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=970">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <title>Airtribune</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="header-panel clearfix">
+      <div class="container">
+
+        <div class="header-panel-inner">
+
+          <div class="logo">
+            <a title="Main page" href="#">
+              <img alt="Airtribune.com" src="img/logo.png" class="site-logo image-style-none">
+            </a>
+          </div>
+
+          <div class="right-panel pull-right">
+
+            <div class="nav-part">
+
+              <div class="require-js-model" data-params='{"name":"dropdown-menu"}'>
+                <div class="dd-parent-container">
+                  <div class="btn btn-default btn-mm dd-parent" data-bind="click:switchCollapse,css:{'active':show}">Events</div>
+                  <div class="dd-item main-menu-item" data-bind="css:{'dd-show':show}" data-width-el=".dd-parent">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <ul class="dd-menu clearfix">
+                          <li>
+                            <a href="#">For organizers</a>
+                          </li>
+                          <li>
+                            <a href="#">For sponsors</a>
+                          </li>
+                          <li>
+                            <a href="#">For pilots</a>
+                          </li>
+                          <li>
+                            <a href="#">For viewers</a>
+                          </li>
+                          <li>
+                            <a href="#">For clubs</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="search-part">
+              <input type="text" placeholder="People search" class="form-control">
+            </div>
+
+            <div class="magic-action-part">
+              <div class="btn-group ">
+                <div class="dd-parent-container btn-group require-js-model" data-params='{"name":"dropdown-menu"}'>
+
+                  <div type="button" class="btn btn-info btn-lang dd-parent" data-bind="click:switchCollapse,css:{'active':show}" data-item="">
+                    <div class="countryflag countryflag-us"></div>
+                  </div>
+
+                  <div class="dd-item" data-bind="css:{'dd-show':show}" data-width-el=".magic-action-part">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <ul class="dd-langs clearfix">
+                          <li><a lang="bg" class="language-link" href="#"><div class="countryflag countryflag-bg"></div>bg</a></li>
+                          <li><a lang="hr" class="language-link" href="#"><div class="countryflag countryflag-hr"></div>hr</a></li>
+                          <li><a lang="en" class="language-link" href="#"><div class="countryflag countryflag-gb"></div>en</a></li>
+                          <li><a lang="fr" class="language-link" href="#"><div class="countryflag countryflag-fr"></div>fr</a></li>
+                          <li><a lang="de" class="language-link" href="#"><div class="countryflag countryflag-de"></div>de</a></li>
+                          <li><a lang="it" class="language-link" href="#"><div class="countryflag countryflag-it"></div>it</a></li>
+                          <li><a lang="ja" class="language-link" href="#"><div class="countryflag countryflag-jp"></div>ja</a></li>
+                          <li><a lang="pl" class="language-link" href="#"><div class="countryflag countryflag-pl"></div>pl</a></li>
+                          <li><a lang="pt" class="language-link" href="#"><div class="countryflag countryflag-pt"></div>pt</a></li>
+                          <li><a lang="ru" class="language-link" href="#"><div class="countryflag countryflag-ru"></div>ru</a></li>
+                          <li><a lang="sr" class="language-link" href="#"><div class="countryflag countryflag-rs"></div>sr</a></li>
+                          <li><a lang="sl" class="language-link" href="#"><div class="countryflag countryflag-si"></div>sl</a></li>
+                          <li><a lang="es" class="language-link" href="#"><div class="countryflag countryflag-es"></div>es</a></li>
+                          <li><a lang="tr" class="language-link" href="#"><div class="countryflag countryflag-tr"></div>tr</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="dd-parent-container btn-group require-js-model" data-params='{"name":"dropdown-menu"}'>
+
+                  <div type="button" class="btn btn-info btn-auth dd-parent" data-bind="click:switchCollapse,css:{'active':show}">
+                    Sign in
+                  </div>
+
+                  <div class="dd-item" data-bind="css:{'dd-show':show}" data-width-el=".magic-action-part">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <div class="dd-signin clearfix">
+                          <form action="#">
+
+                            <div class="form-item">
+                              <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-item">
+                              <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-item clearfix">
+                              <button type="button" class="btn btn-default btn-fb pull-left">Facebook login</button>
+                              <button type="button" class="btn btn-primary btn-go pull-right">Go</button>
+                            </div>
+                            <div class="form-item form-password-request clearfix">
+                              <a href="#">Request new password</a>
+                            </div>
+                            <div class="form-item">
+                              <button type="button" class="btn btn-info btn-reg">Register new user</button>
+                            </div>
+                            
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="page-header clearfix">
+      <div class="container">
+        <div class="carousel-part clearfix require-js-model" data-params='{"name":"top-carousel","slideShowTimeout":3000}'>
+                    
+          <div class="carousel slide" data-bind="css:{'carousel-collapsed':collapsed}">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+              <div class="item active" data-bind="css:{active:currentSlideId()==0}">
+
+                <img src="img/slider/delta-header-1.jpg" alt="Photo 1">
+
+                <div class="carousel-header-slogan">
+                  <div class="img-content">
+                    <p>Competition hosting &amp; live tracking</p>
+                  </div>
+                </div>
+
+                <div class="carousel-label">
+                  Photo by: <a target="_blank" rel="nofollow" href="http://dca.ffvl.fr">Delta Club Annecy</a>
+                </div>
+
+              </div>
+              <div class="item" data-bind="css:{active:currentSlideId()==1}">
+
+                <img src="img/slider/delta-header-2.jpg" alt="Photo 2">
+
+                <div class="carousel-header-slogan">
+                  <div class="img-content">
+                    <p>Competition hosting &amp; live tracking</p>
+                  </div>
+                </div>
+
+                <div class="carousel-label">
+                  Photo by: <a target="_blank" rel="nofollow" href="http://www.azoom.ch/">Martin Scheel</a>
+                </div>
+
+              </div>
+              <div class="item" data-bind="css:{active:currentSlideId()==2}">
+
+                <img src="img/slider/delta-header-3.jpg" alt="Photo 3">
+
+                <div class="carousel-header-slogan">
+                  <div class="img-content">
+                    <p>Competition hosting &amp; live tracking</p>
+                  </div>
+                </div>
+
+                <div class="carousel-label">
+                  Photo by: <a target="_blank" rel="nofollow" href="http://www.azoom.ch/">Martin Scheel</a>
+                </div>
+
+              </div>
+              
+            </div>
+
+            <!-- Controls -->
+            <div class="carousel-collapse" href="#" data-bind="click:switchCollapse">
+              <span class=""></span>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="breadcrumbs-part">
+          <div class="breadcrumbs">
+            <div class="inline first">
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </div> 
+            <span class="delimiter">&rarr;</span> 
+            <div class="inline">
+              <a href="#">
+                <span>Events</span>
+              </a>
+            </div>
+            <span class="delimiter">&rarr;</span> 
+            <div class="inline">
+              <a href="#">
+                <span>Next</span>
+              </a>
+            </div>
+            <span class="delimiter">&rarr;</span> 
+            <div class="inline">
+              <a href="#">
+                <span>13th FAI European Paragliding Championship</span>
+              </a>
+            </div>
+            <span class="delimiter">&rarr;</span> 
+            <div class="inline">
+              <a href="#">
+                <span>Blog</span>
+              </a>
+            </div> 
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Begin page content -->
+    <div class="page-body clearfix">
+      <div class="container">
+
+        <!-- <div class="clearfix require-js-model" data-params='{"name":"top-carousel-controller"}'>
+          <button class="btn btn-default" data-bind="click:collapse">Collapse Carousel</button>
+          <button class="btn btn-default" data-bind="click:expand">Expand Carousel</button>
+          <button class="btn btn-default" data-bind="click:switchNext">Switch to next slide</button>
+        </div> -->
+
+        <div class="row">
+          <div class="col-main-content">
+            
+            <section class="tabs-wrap">
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <a href="#blog" data-toggle="tab">Blog</a>
+                </li>
+                <li>
+                  <a href="#info" data-toggle="tab">Info</a>
+                </li>
+                <li>
+                  <a href="#pilots" data-toggle="tab">Pilots</a>
+                </li>
+                <li>
+                  <a href="#eventMap" data-toggle="tab">Event map</a>
+                </li>
+                <li class="nav-registration">
+                  <a href="#registration" data-toggle="tab">Registration</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="blog">
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="clearfix">
+                            <span class="collapse_text">Day 6 — Task 5 — 92.9 km</span>
+                            <span class="collapse_date">13 Jan, 2014</span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <div class="row row-nomargin">
+                            <a class="task_link"></a>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race light-blue">Results tables</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation">Competition results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                                <dt role="presentation">Task results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race orange">Replay</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">2D</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">3D Google Earth</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race blue">Tracks</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">IGC</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <div class="row row-nomargin">
+                            <ul class="list-reset blog-date-list">
+                              <li class="clearfix">
+                                <span class="blog-date-block">20:09</span>
+                                <p class="blog-date-text">The results are published. Prize giving ceremony will start soon.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">19:42</span>
+                                <p class="blog-date-text">Scoring office is working hard. Due to a large number of airspace infringements the official results will be delayed. Very provisional results of the day show that the first three in Overall were Jamie Messenger, Ricky Gomez and Alexey Tarakanov. The first lady is Andrea Jaramillo.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">15:48</span>
+                                <p class="blog-date-text">We have more than 50 pilots on goal. Retrieve is working to bring everyone to HQ as soon as possible.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:27</span>
+                                <p class="blog-date-text">The task is set - 92 km - Race to goal. Window open 10.30. Start is 11.30. Task dead line is 16.30.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:18</span>
+                                <p class="blog-date-text">At the pilots breifing we congratulated the winners of the task 4 - Jared Anderson from USA and Shauin Kao from Agentina</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">09:11</span>
+                                <p class="blog-date-text">We are at the take off now. Task committee is planning a task.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">07:00</span>
+                                <p class="blog-date-text">Good morning! The weather forecast for today is similar to yestesterday. So we hope to have a task. Buses are waiting for the pilots to go to the take off.</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="blog-img-block list-reset list-inline">
+                              <li class="video">
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-1.jpg" width="100%" height="100%" alt="">
+                                  <span class="blog-video-play"></span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-1.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-2.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-3.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-4.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-5.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-6.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-7.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-8.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li class="video video-very-small">
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-9.jpg" width="76" height="50" alt="">
+                                  <span class="blog-video-play"></span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-10.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-11.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-12.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-13.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-14.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="clearfix collapsed">
+                            <span class="collapse_text">Day 5 — Task 4 — 49.5 km</span>
+                            <span class="collapse_date">12 Jan, 2014</span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row row-nomargin">
+                            <a class="task_link"></a>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race light-blue">Results tables</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation">Competition results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                                <dt role="presentation">Task results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race orange">Replay</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">2D</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">3D Google Earth</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race blue">Tracks</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">IGC</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <div class="row row-nomargin">
+                            <ul class="list-reset blog-date-list">
+                              <li class="clearfix">
+                                <span class="blog-date-block">20:09</span>
+                                <p class="blog-date-text">The results are published. Prize giving ceremony will start soon.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">19:42</span>
+                                <p class="blog-date-text">Scoring office is working hard. Due to a large number of airspace infringements the official results will be delayed. Very provisional results of the day show that the first three in Overall were Jamie Messenger, Ricky Gomez and Alexey Tarakanov. The first lady is Andrea Jaramillo.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">15:48</span>
+                                <p class="blog-date-text">We have more than 50 pilots on goal. Retrieve is working to bring everyone to HQ as soon as possible.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:27</span>
+                                <p class="blog-date-text">The task is set - 92 km - Race to goal. Window open 10.30. Start is 11.30. Task dead line is 16.30.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:18</span>
+                                <p class="blog-date-text">At the pilots breifing we congratulated the winners of the task 4 - Jared Anderson from USA and Shauin Kao from Agentina</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">09:11</span>
+                                <p class="blog-date-text">We are at the take off now. Task committee is planning a task.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">07:00</span>
+                                <p class="blog-date-text">Good morning! The weather forecast for today is similar to yestesterday. So we hope to have a task. Buses are waiting for the pilots to go to the take off.</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="blog-img-block list-reset list-inline">
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-1.jpg" width="100%" height="100%" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-1.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-2.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-3.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-4.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-5.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-6.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-7.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-8.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-9.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-10.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-11.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-12.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-13.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-14.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="clearfix collapsed">
+                            <span class="collapse_text">Day 4 — Task 3 — 79.7 km</span>
+                            <span class="collapse_date">11 Jan, 2014</span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row row-nomargin">
+                            <a class="task_link"></a>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race light-blue">Results tables</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation">Competition results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                                <dt role="presentation">Task results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race orange">Replay</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">2D</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">3D Google Earth</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race blue">Tracks</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">IGC</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <div class="row row-nomargin">
+                            <ul class="list-reset blog-date-list">
+                              <li class="clearfix">
+                                <span class="blog-date-block">20:09</span>
+                                <p class="blog-date-text">The results are published. Prize giving ceremony will start soon.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">19:42</span>
+                                <p class="blog-date-text">Scoring office is working hard. Due to a large number of airspace infringements the official results will be delayed. Very provisional results of the day show that the first three in Overall were Jamie Messenger, Ricky Gomez and Alexey Tarakanov. The first lady is Andrea Jaramillo.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">15:48</span>
+                                <p class="blog-date-text">We have more than 50 pilots on goal. Retrieve is working to bring everyone to HQ as soon as possible.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:27</span>
+                                <p class="blog-date-text">The task is set - 92 km - Race to goal. Window open 10.30. Start is 11.30. Task dead line is 16.30.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:18</span>
+                                <p class="blog-date-text">At the pilots breifing we congratulated the winners of the task 4 - Jared Anderson from USA and Shauin Kao from Agentina</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">09:11</span>
+                                <p class="blog-date-text">We are at the take off now. Task committee is planning a task.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">07:00</span>
+                                <p class="blog-date-text">Good morning! The weather forecast for today is similar to yestesterday. So we hope to have a task. Buses are waiting for the pilots to go to the take off.</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="blog-img-block list-reset list-inline">
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-2.jpg" width="100%" height="100%" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-1.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-2.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-3.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-4.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-5.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-6.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-7.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-8.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-9.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-10.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-11.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-12.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-13.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-14.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="clearfix collapsed">
+                            <span class="collapse_text">Day 3 — Task 2 — 60.5 km — Cancelled</span>
+                            <span class="collapse_date">10 Jan, 2014</span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row row-nomargin">
+                            <a class="task_link"></a>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race light-blue">Results tables</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation">Competition results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                                <dt role="presentation">Task results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race orange">Replay</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">2D</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">3D Google Earth</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race blue">Tracks</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">IGC</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <div class="row row-nomargin">
+                            <ul class="list-reset blog-date-list">
+                              <li class="clearfix">
+                                <span class="blog-date-block">20:09</span>
+                                <p class="blog-date-text">The results are published. Prize giving ceremony will start soon.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">19:42</span>
+                                <p class="blog-date-text">Scoring office is working hard. Due to a large number of airspace infringements the official results will be delayed. Very provisional results of the day show that the first three in Overall were Jamie Messenger, Ricky Gomez and Alexey Tarakanov. The first lady is Andrea Jaramillo.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">15:48</span>
+                                <p class="blog-date-text">We have more than 50 pilots on goal. Retrieve is working to bring everyone to HQ as soon as possible.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:27</span>
+                                <p class="blog-date-text">The task is set - 92 km - Race to goal. Window open 10.30. Start is 11.30. Task dead line is 16.30.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:18</span>
+                                <p class="blog-date-text">At the pilots breifing we congratulated the winners of the task 4 - Jared Anderson from USA and Shauin Kao from Agentina</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">09:11</span>
+                                <p class="blog-date-text">We are at the take off now. Task committee is planning a task.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">07:00</span>
+                                <p class="blog-date-text">Good morning! The weather forecast for today is similar to yestesterday. So we hope to have a task. Buses are waiting for the pilots to go to the take off.</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="blog-img-block list-reset list-inline">
+                              <li class="video">
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-5.jpg" width="100%" height="100%" alt="">
+                                  <span class="blog-video-play"></span>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-5.jpg" width="100%" height="100%" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-15.jpg" width="100%" height="100%" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-16.jpg" width="100%" height="100%" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-17.jpg" width="100%" height="100%" alt="">
+                                </a>
+                              </li>
+                              <li class="video video-small">
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-18.jpg" width="100%" height="100%" alt="">
+                                  <span class="blog-video-play"></span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="clearfix collapsed">
+                            <span class="collapse_text">Day 2 — Cancelled</span>
+                            <span class="collapse_date">9 Jan, 2014</span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFive" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row row-nomargin">
+                            <a class="task_link"></a>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race light-blue">Results tables</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation">Competition results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                                <dt role="presentation">Task results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race orange">Replay</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">2D</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">3D Google Earth</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race blue">Tracks</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">IGC</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <div class="row row-nomargin">
+                            <ul class="list-reset blog-date-list">
+                              <li class="clearfix">
+                                <span class="blog-date-block">20:09</span>
+                                <p class="blog-date-text">The results are published. Prize giving ceremony will start soon.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">19:42</span>
+                                <p class="blog-date-text">Scoring office is working hard. Due to a large number of airspace infringements the official results will be delayed. Very provisional results of the day show that the first three in Overall were Jamie Messenger, Ricky Gomez and Alexey Tarakanov. The first lady is Andrea Jaramillo.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">15:48</span>
+                                <p class="blog-date-text">We have more than 50 pilots on goal. Retrieve is working to bring everyone to HQ as soon as possible.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:27</span>
+                                <p class="blog-date-text">The task is set - 92 km - Race to goal. Window open 10.30. Start is 11.30. Task dead line is 16.30.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:18</span>
+                                <p class="blog-date-text">At the pilots breifing we congratulated the winners of the task 4 - Jared Anderson from USA and Shauin Kao from Agentina</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">09:11</span>
+                                <p class="blog-date-text">We are at the take off now. Task committee is planning a task.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">07:00</span>
+                                <p class="blog-date-text">Good morning! The weather forecast for today is similar to yestesterday. So we hope to have a task. Buses are waiting for the pilots to go to the take off.</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="blog-img-block list-reset list-inline">
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-1.jpg" width="100%" height="100%" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-1.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-2.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-3.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-4.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-5.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-6.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-7.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-8.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-9.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-10.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-11.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-12.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-13.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-14.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" class="clearfix collapsed">
+                            <span class="collapse_text">Day 1 — Task 1 — 79.3 km</span>
+                            <span class="collapse_date">8 Jan, 2014</span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseSix" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row row-nomargin">
+                            <a class="task_link"></a>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race light-blue">Results tables</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation">Competition results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                                <dt role="presentation">Task results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race orange">Replay</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">2D</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">3D Google Earth</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race blue">Tracks</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">IGC</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <div class="row row-nomargin">
+                            <ul class="list-reset blog-date-list">
+                              <li class="clearfix">
+                                <span class="blog-date-block">20:09</span>
+                                <p class="blog-date-text">The results are published. Prize giving ceremony will start soon.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">19:42</span>
+                                <p class="blog-date-text">Scoring office is working hard. Due to a large number of airspace infringements the official results will be delayed. Very provisional results of the day show that the first three in Overall were Jamie Messenger, Ricky Gomez and Alexey Tarakanov. The first lady is Andrea Jaramillo.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">15:48</span>
+                                <p class="blog-date-text">We have more than 50 pilots on goal. Retrieve is working to bring everyone to HQ as soon as possible.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:27</span>
+                                <p class="blog-date-text">The task is set - 92 km - Race to goal. Window open 10.30. Start is 11.30. Task dead line is 16.30.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:18</span>
+                                <p class="blog-date-text">At the pilots breifing we congratulated the winners of the task 4 - Jared Anderson from USA and Shauin Kao from Agentina</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">09:11</span>
+                                <p class="blog-date-text">We are at the take off now. Task committee is planning a task.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">07:00</span>
+                                <p class="blog-date-text">Good morning! The weather forecast for today is similar to yestesterday. So we hope to have a task. Buses are waiting for the pilots to go to the take off.</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="blog-img-block list-reset list-inline">
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-1.jpg" width="100%" height="100%" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-1.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-2.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-3.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-4.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-5.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-6.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-7.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-8.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-9.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-10.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-11.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-12.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-13.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-14.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" class="clearfix collapsed">
+                            <span class="collapse_text">Training day</span>
+                            <span class="collapse_date">7 Jan, 2014</span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseSeven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row row-nomargin">
+                            <a class="task_link"></a>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race light-blue">Results tables</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation">Competition results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                                <dt role="presentation">Task results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race orange">Replay</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">2D</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">3D Google Earth</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race blue">Tracks</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">IGC</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <div class="row row-nomargin">
+                            <ul class="list-reset blog-date-list">
+                              <li class="clearfix">
+                                <span class="blog-date-block">20:09</span>
+                                <p class="blog-date-text">The results are published. Prize giving ceremony will start soon.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">19:42</span>
+                                <p class="blog-date-text">Scoring office is working hard. Due to a large number of airspace infringements the official results will be delayed. Very provisional results of the day show that the first three in Overall were Jamie Messenger, Ricky Gomez and Alexey Tarakanov. The first lady is Andrea Jaramillo.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">15:48</span>
+                                <p class="blog-date-text">We have more than 50 pilots on goal. Retrieve is working to bring everyone to HQ as soon as possible.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:27</span>
+                                <p class="blog-date-text">The task is set - 92 km - Race to goal. Window open 10.30. Start is 11.30. Task dead line is 16.30.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:18</span>
+                                <p class="blog-date-text">At the pilots breifing we congratulated the winners of the task 4 - Jared Anderson from USA and Shauin Kao from Agentina</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">09:11</span>
+                                <p class="blog-date-text">We are at the take off now. Task committee is planning a task.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">07:00</span>
+                                <p class="blog-date-text">Good morning! The weather forecast for today is similar to yestesterday. So we hope to have a task. Buses are waiting for the pilots to go to the take off.</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="blog-img-block list-reset list-inline">
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-1.jpg" width="100%" height="100%" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-1.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-2.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-3.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-4.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-5.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-6.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-7.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-8.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-9.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-10.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-11.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-12.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-13.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-14.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" class="clearfix collapsed">
+                            <span class="collapse_text">Registration day</span>
+                            <span class="collapse_date">6 Jan, 2014</span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseEight" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <div class="row row-nomargin">
+                            <a class="task_link"></a>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race light-blue">Results tables</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation">Competition results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                                <dt role="presentation">Task results</dt>
+                                  <dd>
+                                    <a href="#">Overall</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Women</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">Nations</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race orange">Replay</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">2D</a>
+                                  </dd>
+                                  <dd>
+                                    <a href="#">3D Google Earth</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                            <div class="dropdown">
+                              <span data-toggle="dropdown" class="b-race blue">Tracks</span>
+                              <dl class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <dt role="presentation"></dt>
+                                  <dd>
+                                    <a href="#">IGC</a>
+                                  </dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <div class="row row-nomargin">
+                            <ul class="list-reset blog-date-list">
+                              <li class="clearfix">
+                                <span class="blog-date-block">20:09</span>
+                                <p class="blog-date-text">The results are published. Prize giving ceremony will start soon.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">19:42</span>
+                                <p class="blog-date-text">Scoring office is working hard. Due to a large number of airspace infringements the official results will be delayed. Very provisional results of the day show that the first three in Overall were Jamie Messenger, Ricky Gomez and Alexey Tarakanov. The first lady is Andrea Jaramillo.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">15:48</span>
+                                <p class="blog-date-text">We have more than 50 pilots on goal. Retrieve is working to bring everyone to HQ as soon as possible.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:27</span>
+                                <p class="blog-date-text">The task is set - 92 km - Race to goal. Window open 10.30. Start is 11.30. Task dead line is 16.30.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">11:18</span>
+                                <p class="blog-date-text">At the pilots breifing we congratulated the winners of the task 4 - Jared Anderson from USA and Shauin Kao from Agentina</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">09:11</span>
+                                <p class="blog-date-text">We are at the take off now. Task committee is planning a task.</p>
+                              </li>
+                              <li class="clearfix">
+                                <span class="blog-date-block">07:00</span>
+                                <p class="blog-date-text">Good morning! The weather forecast for today is similar to yestesterday. So we hope to have a task. Buses are waiting for the pilots to go to the take off.</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="blog-img-block list-reset list-inline">
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-1.jpg" width="100%" height="100%" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-1.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-2.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-3.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-4.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-5.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-6.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-7.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-8.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-9.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-10.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-11.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-12.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-13.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <img src="img/events/tab-blog-img-small-14.jpg" width="76" height="50" alt="">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-group" id="accordionSecond">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#secondCollapseOne" class="clearfix collapsed">
+                            <span class="collapse_text">Preparation blog</span>
+                            <span class="collapse_arrow arrow-dwon"></span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="secondCollapseOne" class="panel-collapse collapse">
+                        <ul class="tab-blog-list">
+                          <li>
+                            <div class="post-data">27 May, 2014</div>
+                            <h2 class="title-tab-pane"><a href="#">Qualified pilots outside Europe list</a></h2>
+                            <p class="text-tab-pane">
+                              We have list of pilots who are qualified from outside of Europe published in the DOWLOADS section.<br/>
+                              <a href="#" class="text-blue">http://airtribune.com/files/pg-contests/6519-13th-fai-european-paraglidi...</a><br/>
+                              Now you can find there two lists - for European piots and pilots from other parts of the world.
+                            </p>
+                            <a href="#" class="link-view_more">View more</a>
+                          </li>
+                          <li>
+                            <div class="post-data">27 May, 2014</div>
+                            <h2 class="title-tab-pane"><a href="#">Qualified pilots outside Europe list</a></h2>
+                            <p class="text-tab-pane">
+                              Dear participants of the 13th FAI European Championship,
+                            </p>
+                            <p class="text-tab-pane">
+                              In accordance with the Local regulations for 13th FAI European Championship (3 - 16 August, Koponik-Raska, Serbia) the entry deadline will be 1st June 2014.<br/>
+                              There is still 6 days until the entry deadline.
+                            </p>
+                            <p class="text-tab-pane">
+                              The following countries haven’t completed registration on official website (
+                              <a href="#" class="text-blue">http://www.airtribune.com/euro2014/pilots</a>
+                              )
+                            </p>
+                            <a href="#" class="link-view_more">View more</a>
+                          </li>
+                          <li>
+                            <div class="post-data">19 May, 2014</div>
+                            <h2 class="title-tab-pane"><a href="#">TV Coverage</a></h2>
+                            <img class="tab-blog-list-img_indent" alt="Airtribune.com" width="100%" height="100%" src="img/events/chrigl-maurer-ech.jpg">
+                            <p class="text-tab-pane">
+                              We are happy to announce that Christian Maurer - X-Alps Champion, and one of the best pilots in the World - will be a member of Swiss team for 13th FAI European Paragliding Championship. So the Swiss Television will come to Kopaonik to cover the event with famous cameramen Niels Dachler. Niels will be not only in Swiss Televisions, but also in others. That's why we expect a great coverage of the event.
+                            </p>
+                            <a href="#" class="link-view_more">View more</a>
+                          </li>
+                          <li>
+                            <div class="post-data">14 May, 2014</div>
+                            <h2 class="title-tab-pane"><a href="#">Qualified pilots list is published!</a></h2>
+                            <p class="text-tab-pane">
+                              We have published the table of pilots qualified for Euro 2014. Please find the file in the Dowloads section. Or click here to get the 
+                              <a href="#" class="text-blue">direct link.</a>
+                            </p>
+                            <a href="#" class="link-view_more">View more</a>
+                          </li>
+                          <li>
+                            <div class="post-data">13 Feb, 2014</div>
+                            <h2 class="title-tab-pane"><a href="#">The registration is open.</a></h2>
+                            <img class="tab-blog-list-img_indent" alt="" width="100%" height="100%" src="img/events/reg.jpg">
+                            <p class="text-tab-pane">
+                              The registration is open. Everybody is welcome!<br/>
+                              We invite pilots to submit their registrations as soon as possible. After pilots are registered the national team leaders will be able to allocate official teams using Airtribune’s FAI 1 team management page.
+                            </p>
+                            <a href="#" class="link-view_more">View more</a>
+                          </li>
+                          <li>
+                            <div class="post-data">21 Jan, 2014</div>
+                            <h2 class="title-tab-pane"><a href="#">Local regulations are approved by CIVL</a></h2>
+                            <p class="text-tab-pane">
+                              Local regulations are now approved by CIVL and are published.
+                            </p>
+                            <a href="#" class="link-view_more">View more</a>
+                          </li>
+                          <li>
+                            <div class="post-data">18 Nov, 2013</div>
+                            <h2 class="title-tab-pane"><a href="#"></a>The web site is open!</a></h2>
+                            <img class="tab-blog-list-img_indent" alt="" width="100%" height="100%" src="img/events/para-euro-2014.png">
+                            <p class="text-tab-pane">
+                              The registration will be be open as soon as we finish all the formalities. Keep an eye on our news!
+                            </p>
+                            <a href="#" class="link-view_more">View more</a>
+                          </li>
+                        </ul>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="info">
+                  <div class="row row-nomargin news-feed">
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">25 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European Paragliding Championship! <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">17 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">5 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European Paragliding Championship! <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin panel-row">
+                    <div class="col-md-6 panel-row-item col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico"></span>
+                          <span class="title-panel-text">Event info</span>
+                        </a>
+                      </h3>
+                      <p>
+                        The main paragliding event of 2014 welcomes you in the middle of Europe in the mountains of Serbian Kopaonik. This European paragliding site has already hosted PWC in 2013 and dozens of PrePWC and Serbianl Nationals, which always were successful.
+                      </p>
+                      <a href="#" class="link-view_more">View more</a>
+                    </div>
+                    <div class="col-md-6 panel-row-item">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico flying"></span>
+                          <span class="title-panel-text">Flying site</span>
+                        </a>
+                      </h3>
+                      <p>
+                        Kopaonik is one of the largest mountain ranges of Serbia. It is located in the central part of the country. Its highest mountain - Pančić's Peak - is 2,017 m ASL. Kopaonik is a National park and the major ski resort of Serbia.
+                      </p>
+                      <a href="#" class="link-view_more">View more</a>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin events-slider">
+                    <ul class="list-reset list-inline events-slider-list">
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-1.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-2.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-3.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-4.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-5.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                    <span class="events-slider-arrow arrow-prew"></span>
+                    <span class="events-slider-arrow arrow-next"></span>
+                  </div>
+                  <div class="row row-nomargin pilots-schedule">
+                    <div class="col-md-4 col-nopadding">
+                      <ul class="schedule-list">
+                        <li class="count-green">
+                          <span class="schedule-count">25</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Pilots</span>
+                            <span class="schedule-hint">confirmed</span>
+                          </span>
+                        </li>
+                        <li class="count-light_blue">
+                          <span class="schedule-count">888</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Pilots</span>
+                            <span class="schedule-hint">in waiting list</span>
+                          </span>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">View more</a>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="schedule-list">
+                        <li class="count-yellow">
+                          <span class="schedule-count">13</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Accommodation</span>
+                            <span class="schedule-hint">places</span>
+                          </span>
+                        </li>
+                        <li class="count-yellow">
+                          <span class="schedule-count">152</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Activities</span>
+                            <span class="schedule-hint">places</span>
+                          </span>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">View more</a>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="simple-list">
+                        <li>
+                          <a href="#">Selection and entry fee</a>
+                        </li>
+                        <li>
+                          <a href="#">General schedule</a>
+                        </li>
+                        <li>
+                          <a href="#">Daily schedule</a>
+                        </li>
+                        <li>
+                          <a href="#">Download rules</a>
+                        </li>
+                        <li class="open-ok">
+                          <a href="#">Open class allowed</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin block-prize">
+                    <div class="col-md-8 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico prize"></span>
+                          <span class="title-panel-text">Prize funds and scoring categories</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset prize-list">
+                        <li>
+                          <span class="prize-item">Overall</span>
+                        </li>
+                        <li>
+                          <span class="prize-item">Women</span>
+                        </li>
+                        <li>
+                          <span class="prize-item">Nations</span>
+                        </li>
+                        <li>
+                          <a href="#" class="prize-other_items">Offer your prizes</a>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">More information about prizes and categories</a>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico organizers"></span>
+                          <span class="title-panel-text">Organizers</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset organizers-list">
+                        <li>
+                          <a href="#">
+                            <span class="organizers-img-wrap">
+                              <img class="organizers-img" width="40" height="28" src="img/events/200-x-140-vss-eng.gif" alt="">
+                            </span>
+                            <span class="organizers-text">Robert Barateon</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="organizers-img-wrap">
+                              <img class="organizers-img" width="40" height="40" src="img/events/ovuka-zeljko-200_4.jpg" alt="">
+                            </span>
+                            <span class="organizers-text">Tom Manny</span></a>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">More information about organizers</a>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin">
+                    <div class="col-md-8 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico map"></span>
+                          <span class="title-panel-text"> How to get here</span>
+                        </a>
+                      </h3>
+                      <div class="row row-nomargin">
+                        <div class="col-md-6 col-nopadding">
+                          <div>Hotel Angella, bb 36354 Kopaonik Serbia</div>
+                          <ul class="list-reset list-inline transport-list">
+                            <li class="plane">
+                              <a href="#"></a>
+                            </li>
+                            <li class="bus">
+                              <a href="#"></a>
+                            </li>
+                            <li class="car">
+                              <a href="#"></a>
+                            </li>
+                            <li class="taxi">
+                              <a href="#"></a>
+                            </li>
+                          </ul>
+                          <a href="#" class="link-view_more">View more</a>
+                        </div>
+                        <div class="col-md-6">                          
+                          <p>Kopaonik is situated some 270 km from Belgrade and it is in South Serbia. We'll organize a transfer from Belgrade to Kopaonik if you ask for it.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico facebook"></span>
+                          <span class="title-panel-text">Facebook</span>
+                        </a>
+                      </h3>
+                      <img src="img/events/soc-fb-block.png" width="220" height="330" alt="">
+                    </div>
+                  </div>
+                  <div class="row row-nomargin contacts-block">
+                    <div class="col-md-4 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico contacts"></span>
+                          <span class="title-panel-text">Contacts</span>
+                        </a>
+                      </h3>
+                      <div class="row row-nomargin">
+                        <ul class="list-reset contacts-list">
+                          <li>
+                            <h5 class="contacts-list-title">General questions</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Tommy Landington</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">infopressololo@para-sopot2013.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Selestion and antry</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Lin Tinkieva</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Transportation</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Timur Grinev</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Accommodation</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Vasiliy Sankevich</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico downloads"></span>
+                          <span class="title-panel-text">Downloads</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset download-list">
+                        <li class="downloads-item pdf">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            Filename.wpt
+                          </a>
+                        </li>
+                        <li class="downloads-item xls">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            Filename.doc
+                          </a>
+                        </li>
+                        <li class="downloads-item xls">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            Waypoints.utm
+                          </a>
+                        </li>
+                        <li class="downloads-item doc">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            Waypoints.geo
+                          </a>
+                        </li>
+                        <li class="downloads-item dem">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            Waypoints.kml
+                          </a>
+                        </li>
+                        <li class="downloads-item dem">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            Waypoints.seey
+                          </a>
+                        </li>
+                        <li class="downloads-item lkm">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            Waypoints.cgps
+                          </a>
+                        </li>
+                        <li class="downloads-item pdf">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            Waypoints.cgps
+                          </a>
+                        </li>
+                        <!-- <li class="downloads-item more-downloads">
+                          <a href="#">
+                            <span class="downloads-ico"></span>
+                            More downloads
+                          </a>
+                        </li> -->
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="list-reset list-inline events-soc-list">
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-fb.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-tw.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-g.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-yt.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-v.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-od.jpg" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                      <img class="soc-likes" src="img/events/soc-likes.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pilots"></div>
+                <div class="tab-pane fade" id="eventMap">
+                  <div class="row row-nomargin news-feed">
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">25 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European Paragliding Championship! <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">17 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#">
+                        <span class="news-feed-data">5 Nov, 2012</span>
+                        <span class="news-feed-text">Welcome to 2012 European Paragliding Championship! <span class="arrow arrow-red"></span></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin panel-row">
+                    <div class="col-md-6 panel-row-item col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico"></span>
+                          <span class="title-panel-text">Event info</span>
+                        </a>
+                      </h3>
+                      <p>
+                        The main paragliding event of 2014 welcomes you in the middle of Europe in the mountains of Serbian Kopaonik. This European paragliding site has already hosted PWC in 2013 and dozens of PrePWC and Serbianl Nationals, which always were successful.
+                      </p>
+                      <a href="#" class="link-view_more">View more</a>
+                    </div>
+                    <div class="col-md-6 panel-row-item">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico flying"></span>
+                          <span class="title-panel-text">Flying site</span>
+                        </a>
+                      </h3>
+                      <p>
+                        Kopaonik is one of the largest mountain ranges of Serbia. It is located in the central part of the country. Its highest mountain - Pančić's Peak - is 2,017 m ASL. Kopaonik is a National park and the major ski resort of Serbia.
+                      </p>
+                      <a href="#" class="link-view_more">View more</a>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin events-slider">
+                    <ul class="list-reset list-inline events-slider-list">
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-1.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-2.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-3.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-4.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/events/slider-img-5.jpg" width="232" height="150" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                    <span class="events-slider-arrow arrow-prew"></span>
+                    <span class="events-slider-arrow arrow-next"></span>
+                  </div>
+                  <div class="row row-nomargin pilots-schedule">
+                    <div class="col-md-4 col-nopadding">
+                      <ul class="schedule-list">
+                        <li class="count-green">
+                          <span class="schedule-count">25</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Pilots</span>
+                            <span class="schedule-hint">confirmed</span>
+                          </span>
+                        </li>
+                        <li class="count-light_blue">
+                          <span class="schedule-count">888</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Pilots</span>
+                            <span class="schedule-hint">in waiting list</span>
+                          </span>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">View more</a>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="schedule-list">
+                        <li class="count-yellow">
+                          <span class="schedule-count">13</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Accommodation</span>
+                            <span class="schedule-hint">places</span>
+                          </span>
+                        </li>
+                        <li class="count-yellow">
+                          <span class="schedule-count">152</span>
+                          <span class="schedule-text-wrap">
+                            <span class="schedule-text">Activities</span>
+                            <span class="schedule-hint">places</span>
+                          </span>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">View more</a>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="simple-list">
+                        <li>
+                          <a href="#">Selection and entry fee</a>
+                        </li>
+                        <li>
+                          <a href="#">General schedule</a>
+                        </li>
+                        <li>
+                          <a href="#">Daily schedule</a>
+                        </li>
+                        <li>
+                          <a href="#">Download rules</a>
+                        </li>
+                        <li class="open-ok">
+                          <a href="#">Open class allowed</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin block-prize">
+                    <div class="col-md-8 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico prize"></span>
+                          <span class="title-panel-text">Prize funds and scoring categories</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset prize-list">
+                        <li>
+                          <span class="prize-item">Overall</span>
+                        </li>
+                        <li>
+                          <span class="prize-item">Women</span>
+                        </li>
+                        <li>
+                          <span class="prize-item">Nations</span>
+                        </li>
+                        <li>
+                          <a href="#" class="prize-other_items">Offer your prizes</a>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">More information about prizes and categories</a>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico organizers"></span>
+                          <span class="title-panel-text">Organizers</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset organizers-list">
+                        <li>
+                          <a href="#">
+                            <span class="organizers-img-wrap">
+                              <img class="organizers-img" width="40" height="28" src="img/events/200-x-140-vss-eng.gif" alt="">
+                            </span>
+                            <span class="organizers-text">Robert Barateon</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="organizers-img-wrap">
+                              <img class="organizers-img" width="40" height="40" src="img/events/ovuka-zeljko-200_4.jpg" alt="">
+                            </span>
+                            <span class="organizers-text">Tom Manny</span></a>
+                        </li>
+                      </ul>
+                      <a href="#" class="link-view_more">More information about organizers</a>
+                    </div>
+                  </div>
+                  <div class="row row-nomargin">
+                    <div class="col-md-8 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico map"></span>
+                          <span class="title-panel-text"> How to get here</span>
+                        </a>
+                      </h3>
+                      <div class="row row-nomargin">
+                        <div class="col-md-6 col-nopadding">
+                          <div>Hotel Angella, bb 36354 Kopaonik Serbia</div>
+                          <ul class="list-reset list-inline transport-list">
+                            <li class="plane">
+                              <a href="#"></a>
+                            </li>
+                            <li class="bus">
+                              <a href="#"></a>
+                            </li>
+                            <li class="car">
+                              <a href="#"></a>
+                            </li>
+                            <li class="taxi">
+                              <a href="#"></a>
+                            </li>
+                          </ul>
+                          <a href="#" class="link-view_more">View more</a>
+                        </div>
+                        <div class="col-md-6">                          
+                          <p>Kopaonik is situated some 270 km from Belgrade and it is in South Serbia. We'll organize a transfer from Belgrade to Kopaonik if you ask for it.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico facebook"></span>
+                          <span class="title-panel-text">Facebook</span>
+                        </a>
+                      </h3>
+                      <img src="img/events/soc-fb-block.png" width="220" height="330" alt="">
+                    </div>
+                  </div>
+                  <div class="row row-nomargin contacts-block">
+                    <div class="col-md-4 col-nopadding">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico contacts"></span>
+                          <span class="title-panel-text">Contacts</span>
+                        </a>
+                      </h3>
+                      <div class="row row-nomargin">
+                        <ul class="list-reset contacts-list">
+                          <li>
+                            <h5 class="contacts-list-title">General questions</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Tommy Landington</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">infopressololo@para-sopot2013.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Selestion and antry</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Lin Tinkieva</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Transportation</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Timur Grinev</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <h5 class="contacts-list-title">Accommodation</h5>
+                            <ul class="list-reset contacts_block-list">
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">name:</span>
+                                <span class="contacts_block-item_right">Vasiliy Sankevich</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">tel:</span> 
+                                <span class="contacts_block-item_right">+32 (34) 232-35-23</span>
+                              </li>
+                              <li class="clearfix">
+                                <span class="contacts_block-item_left">email:</span>
+                                <a class="contacts_block-item_right" href="#">info@mailbox.com</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <h3 class="title-panel event-title">
+                        <a href="#">
+                          <span class="title-panel-ico downloads"></span>
+                          <span class="title-panel-text">Downloads</span>
+                        </a>
+                      </h3>
+                      <ul class="list-reset download-list">
+                        <li>
+                          <a href="#">Filename.wpt</a>
+                        </li>
+                        <li>
+                          <a href="#">Filename.doc</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.utm</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.geo</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.kml</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.seey</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.cgps</a>
+                        </li>
+                        <li>
+                          <a href="#">Waypoints.cgps</a>
+                        </li>
+                        <li>
+                          <a href="#">More downloads</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="list-reset list-inline events-soc-list">
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-fb.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-tw.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-g.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-yt.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-v.jpg" alt="">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="img/events/soc-od.jpg" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                      <img class="soc-likes" src="img/events/soc-likes.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="registration"></div>
+              </div>
+              
+            </section>
+
+
+          </div>
+          <div class="col-sidebar">
+            
+            <!-- <div class="header-part clearfix"></div> -->
+
+            <section class="box-style recently-viewed-part clearfix">
+              <h2>Partners</h2>
+              <div class="content">
+              </div>
+            </section>
+
+            <section class="box-style upcoming-events-part clearfix">
+              <h2>Next events</h2>
+              <div class="content">
+                
+              </div>
+            </section>
+            <section class="box-style">
+              <img src="img/events/soc-fb-friends.jpg" alt="">
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-content contact-part">
+            <div class="logo"><img alt="" src="img/logo-lower.png"></div>
+            <p>Airtribune is a mobile app for your trainings and competitions live tracking.</p>
+
+            <p>Moscow, Russia <br>
+            Ph.: +7 (985) 762-72-38 <br>
+            E-mail: <a href="mailto:info@airtribune.com">info@airtribune.com</a></p>
+          </div>
+          <div class="col-content info-one-part">
+            <div class="title">
+              <a href="#">Mobile application</a>
+            </div>
+            <p>Live track and store your trainings, add descriptions and share them with your friends.</p>
+            <p>Follow your friends trainings in real time and replay.</p>
+            <p>Stay visible during competitions and sports events.</p>
+          </div>
+          <div class="col-content info-two-part">
+            <span class="title">Competition hosting</span>
+            <p>
+              Publish your event in a multi-lingual format, 
+              f specially designed for paragliding and hang gliding competitions. 
+              Get live tracking embedded! It’s free!
+            </p>
+            <span class="title">Competition live tracking</span>
+            <p>
+              Live track your event using pilots’ smartphones. 
+              Forget about trackers rent and "hand-in/collect" mess.
+            </p>
+            <span class="title">Retrieve service</span>
+            <p>
+              Turn your computer into a situational awareness center of your competition using Airtribune.
+            </p>
+          </div>
+          <div class="col-content social-part">
+            <span class="title">Follow us</span>
+            <div class="list">
+              <ul>
+                <li><a target="_blank" rel="nofollow" class="tw" href="http://twitter.com/airtribune"><span>Twitter</span></a></li>
+                <li><a target="_blank" rel="nofollow" class="vk" href="http://vk.com/airtribune"><span>VKontakte</span></a></li>
+                <li style="display: none;"><a target="_blank" rel="nofollow" class="lj" href="#"><span>Livejournal</span></a></li>
+                <li><a target="_blank" rel="nofollow" class="fb" href="http://www.facebook.com/Airtribune"><span>Facebook</span></a></li>
+                <li style="display: none;"><a target="_blank" rel="nofollow" class="yt" href="#"><span>Youtube</span></a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        <p class="copyright-part">
+          &copy; 2012 Airtribune. All rights reserved &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="vendor/requirejs/require.js" data-main="js/main"></script>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor_override/bootstrap/bootstrap.js"></script>    
+    <script type="text/javascript" src="js/accordion.js"></script>
+  </body>
+</html>

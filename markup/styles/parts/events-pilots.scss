@@ -1,0 +1,377 @@
+// start events-pilots
+.pilots-tab {
+  margin-top: 20px;
+  &.sub-pilots-tab {
+    margin-top: 29px;
+  }
+}
+.tab-content {
+  &.tab-content-pilots {
+    margin-top: 20px;
+  }
+}
+.pane-pilots-statistics {
+  .col-md-4 {
+    .pilots-result {
+      width: 70px;
+      display: inline-block;
+      text-align: center;
+      border: 1px solid #cad541;
+      background: #d3dc3f;
+      color: #fff;
+      font: bold 26px/38px Arial,Helvetica,sans-serif;
+      @include border-radius(2px);
+      float: left;
+    }
+    .pilots-text {
+      padding: 0 10px;
+      color: #c2c94e;
+      width: 74px;
+      font: bold 14px/20px Arial,Helvetica,sans-serif;
+      margin-top: -1px;
+      float: left;
+    }
+    &.pilots-total {
+      .pilots-result {
+        background-color: #b6c8d7;
+        border-color: #afc2d2;
+      }
+      .pilots-text {
+        color: #a2b1c0;
+      }
+    }
+    &.pilots-allowed {
+      .pilots-result {
+        background-color: #f1b71c;
+        border-color: #e7b11f;
+      }
+      .pilots-text {
+        color: #f1b71c;
+      }
+    }
+  }
+}
+.switch-pilots-view {
+  a {
+    display: inline-block;
+    width: 40px;
+    height: 41px;
+    overflow: hidden;
+    background: url("../img/events/table_action.png") no-repeat 0 -1000px;
+    margin-left: 10px;
+    &.by-status {
+      background-position: 0 -475px;
+      &:hover, &.active {
+        background-position: 0 -375px;
+      }
+    }
+    &.by-nation {
+      background-position: 0 -675px;
+      &:hover, &.active {
+        background-position: 0 -575px;
+      }
+    }
+  }
+}
+.tabs-wrap {
+  .nav-tabs {
+    &.nav-events-pilots {
+      float: right;
+      line-height: 1;
+      border-bottom: none;
+      > li {
+        margin-left: 10px;
+        > a {
+          padding: 10px 20px;
+          border:none;
+          cursor: pointer;
+          margin: 0;
+        }
+        &.active {
+          a {
+            &.by-status {
+              background-position: 0 -375px;
+            }
+            &.by-nation {
+              background-position: 0 -575px;
+            }
+          }
+        }
+      }  
+    }
+  }
+}
+.table-pilot {
+  margin: 18px 0 0;
+  padding: 0;
+  width: 701px;
+  border: 1px solid #e4e9eb;
+  position: relative;
+  border-collapse: separate;
+  border-top: none;
+  color: #525d66;
+  font: 14px/16px Arial,Helvetica,sans-serif;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  &.table-six {
+    caption {
+      padding: 4px 8px 4px;
+    }
+    th + th + th {
+      text-align: left;
+    }
+    th + th + th + th {
+      text-align: center;
+    }
+    th + th + th + th + th {
+      text-align: left;
+    }
+    th + th + th + th + th + th {
+      text-align: center;
+    }
+    td {
+      width: 7%;
+      width: 52px;
+      .countryflag {
+        margin-right: 6px;
+      }
+    }
+    td + td {
+      width: 27%;
+      width: 203px;
+    }
+    td + td + td {
+      width: 15%;
+      width: 89px;
+    }
+    td + td + td + td {
+      width: 16%;
+      width: 161px;
+    }
+    td + td + td + td + td {
+      width: 13%;
+      width: 86px;
+      text-align: center;
+    }
+    td + td + td + td + td + td {
+      width: 22%;
+      width: 111px;
+      text-align: left;
+      padding-right: 5px;
+      border-left: 1px solid #f5f5f5;
+    }
+    tr + tr td {
+      padding: 11px 9px 12px;
+    }
+  }
+  td {
+    border-top: 1px solid #f5f5f5;
+    padding: 23px 9px 11px;
+    vertical-align: top;
+    width: 8%;
+    width: 52px;
+    .gender-1 {
+      display: inline-block;
+      width: 10px;
+      height: 16px;
+      background: url("../img/events/table_action.png") no-repeat 0 -1375px;
+      margin-left: 9px;
+      position: relative;
+      top: 1px;
+      vertical-align: top;
+    }
+  }
+  td + td {
+    width: 27%;
+    width: 231px;
+    border-left: 1px solid #f5f5f5;
+  }
+  td + td + td {
+    width: 29%;
+    width: 202px;
+    border-left: 1px solid #f5f5f5;
+  }
+  td + td + td + td {
+    width: 17%;
+    width: 105px;
+    border-left: 1px solid #f5f5f5;
+  }
+  td + td + td + td + td {
+    width: 19%;
+    width: 111px;
+    border-left: 1px solid #f5f5f5;
+  }
+  tr {
+    &:nth-child(even), &.even {
+      background: #fafafa;
+    }
+  }
+  caption {
+    background-image: url("../img/events/table_action.png");
+    background-repeat: no-repeat;
+    background-position: 14px -967px;
+    position: relative;
+    background-color: #f1f4f6;
+    color: #758594;
+    font: 24px/26px Arial,Helvetica,sans-serif;
+    border: 1px solid #e4e9eb;
+    padding: 6px 8px 8px;
+    min-height: 26px;
+    text-align: left;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    .countryflag {
+      margin: 0 15px 2px 10px;
+      position: relative;
+      top: 1px;
+    }
+    .sex {
+      display: inline-block;
+      padding-left: 35px;
+      height: 27px;
+      background: url("../img/events/table_action.png") no-repeat 0 -1000px;
+      &.female {
+        background-position: 6px -771px;
+      }
+      &.male {
+        background-position: 6px -872px;
+      }
+    }
+    .caption-text {
+      display: inline-block;
+      vertical-align: 4px;
+    }
+  }
+  thead {
+    display: none;
+    &.thead-show {
+      display: table-header-group;
+    }
+    tr {
+      background: #f7f8f9;
+      th {
+        border-bottom: 1px solid #eef1f3;
+        border-left: 1px solid #eef1f3;
+        padding: 18px 8px 18px;
+        text-align: left;
+        font: bold 16px/20px Arial,Helvetica,sans-serif;
+        color: #525d66;
+        .table-title-wrap {
+          cursor: pointer;
+          position: relative;
+          .table-arrow {
+            display: inline-block;
+            width: 10px;
+            height: 8px;
+            position: absolute;
+            top: 50%;
+            margin: -4px 0 0 0;
+            background: url("../img/events/table_action.png") no-repeat 100% -1075px;  
+            &.table-arrow-up {
+              background-position: -1px -1074px;
+              // &:hover {
+              //   background-position: 100% -1175px;
+              // }
+            }
+          }
+          .table-title-text {
+            color: #525d66;
+            padding-right: 14px;
+          }
+          &:hover {
+            .table-title-text {
+              color: #33c0f8;
+            }
+            .table-arrow {
+              background-position: 100% -1275px;
+              // &:hover {
+              //   background-position: 100% -1175px;
+              // }
+              &.table-arrow-up {
+                background-position: 100% -1175px;
+              }
+            }
+          }
+        }
+        &:first-child {
+          border-left: 1px solid #e4e9eb;
+          border-left: none;
+        }
+      }
+      // &:first-child {
+      //   th {
+      //     border-top: 1px solid #e4e9eb;
+      //   }
+      // }
+      th + th {
+        text-align: center;
+        .table-title-wrap {
+          .table-title-text {
+            padding-right: 8px;
+          }
+        }
+      }
+    }
+  }
+  tbody {
+    border-top: none;
+    tr {
+      &.odd {
+        background: none;
+        border-bottom: 1px solid #ccc;
+        padding: 0.1em 0.6em;
+      }
+      &:first-child {
+        td {
+          border-top: none;
+        }
+      }
+      &.even {
+        background: #fafafa;
+      }
+      &:hover {
+        background: #cceffc;
+      }
+      td {
+        &:first-child {
+          text-align: center;
+        }
+        .td_inner {
+          background: url("../img/events/pilot_statuses.png") no-repeat 0 -100px;
+          display: inline-block;
+          font: 14px/16px Arial,Helvetica,sans-serif;
+          padding-left: 20px;
+          color: #c1c7cc;
+          &.confirmed {
+            background-position: 0 0;
+            color: #b6c32a;
+          }
+          &.in_progress {
+            background-position: 0 -50px;
+            color: #efae00;
+          }
+          &.waiting {
+            background-position: 0 -150px;
+            color: #97caf2;
+          }
+        }
+        color: #525d66;
+        font: 14px/18px Arial,Helvetica,sans-serif;
+      }
+      td + td + td {
+        text-align: center;
+      }
+      td + td + td + td {
+        text-align: center;
+        padding: 23px 9px 11px;
+      }
+      td + td + td + td + td {
+        text-align: left;
+      }
+    }
+  }
+}
+
+// end events-pilots

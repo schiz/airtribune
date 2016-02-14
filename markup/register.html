@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=970">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <title>Airtribune</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      window.ATDATA = {};
+      window.ATDATA.eventLists = {
+        "current-events": {
+            "title": "Magical header with current event",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 18, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 42, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 19, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 40, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 18.8, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 42, "city": "Cameli"}]
+        },
+        "next-events": {
+            "title": "Magical header with next event",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 15, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 41, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 16, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 42, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 14, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 43, "city": "Cameli"}]
+        },
+        "past-events": {
+            "title": "Magical header with past events",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 18, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 45, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 20, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 44, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 21, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 42, "city": "Cameli"}]
+        }
+      }
+      window.ATDATA.carousels = {
+        "photoBlock01": [
+          {img:"img/slider/delta-header-1.jpg",alt:"Photo 1",copyright:"Delta Club Annecy",copyrightLink:"http://dca.ffvl.fr"},
+          {img:"img/slider/delta-header-2.jpg",alt:"Photo 2",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+          {img:"img/slider/delta-header-3.jpg",alt:"Photo 3",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+        ],
+        "photoBlock02": [
+          {img:"img/slider/delta-header-4.jpg",alt:"Photo 1",copyright:"Delta Club Annecy",copyrightLink:"http://dca.ffvl.fr"},
+          {img:"img/slider/delta-header-5.jpg",alt:"Photo 2",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+          {img:"img/slider/delta-header-6.png",alt:"Photo 3",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+        ]
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="header-panel clearfix">
+      <div class="container">
+
+        <div class="header-panel-inner">
+
+          <div class="logo">
+            <a title="Main page" href="#">
+              <img alt="Airtribune.com" src="img/logo.png" class="site-logo image-style-none">
+            </a>
+          </div>
+
+          <div class="right-panel pull-right">
+
+            <div class="nav-part">
+
+              <div class="require-js-model" data-params='{"name":"dropdown-menu"}'>
+                <div class="dd-parent-container">
+                  <div class="btn btn-default btn-mm dd-parent" data-bind="click:switchCollapse,css:{'active':show}">Events</div>
+                  <div class="dd-item main-menu-item" data-bind="css:{'dd-show':show}" data-width-el=".dd-parent">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <ul class="dd-menu clearfix">
+                          <li>
+                            <a href="#">For organizers</a>
+                          </li>
+                          <li>
+                            <a href="#">For sponsors</a>
+                          </li>
+                          <li>
+                            <a href="#">For pilots</a>
+                          </li>
+                          <li>
+                            <a href="#">For viewers</a>
+                          </li>
+                          <li>
+                            <a href="#">For clubs</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="search-part">
+              <input type="text" placeholder="People search" class="form-control">
+            </div>
+
+            <div class="magic-action-part">
+              <div class="btn-group ">
+                <div class="dd-parent-container btn-group require-js-model" data-params='{"name":"dropdown-menu"}'>
+
+                  <div type="button" class="btn btn-info btn-lang dd-parent" data-bind="click:switchCollapse,css:{'active':show}" data-item="">
+                    <div class="countryflag countryflag-us"></div>
+                  </div>
+
+                  <div class="dd-item" data-bind="css:{'dd-show':show}" data-width-el=".magic-action-part">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <ul class="dd-langs clearfix">
+                          <li><a lang="bg" class="language-link" href="#"><div class="countryflag countryflag-bg"></div>bg</a></li>
+                          <li><a lang="hr" class="language-link" href="#"><div class="countryflag countryflag-hr"></div>hr</a></li>
+                          <li><a lang="en" class="language-link" href="#"><div class="countryflag countryflag-gb"></div>en</a></li>
+                          <li><a lang="fr" class="language-link" href="#"><div class="countryflag countryflag-fr"></div>fr</a></li>
+                          <li><a lang="de" class="language-link" href="#"><div class="countryflag countryflag-de"></div>de</a></li>
+                          <li><a lang="it" class="language-link" href="#"><div class="countryflag countryflag-it"></div>it</a></li>
+                          <li><a lang="ja" class="language-link" href="#"><div class="countryflag countryflag-jp"></div>ja</a></li>
+                          <li><a lang="pl" class="language-link" href="#"><div class="countryflag countryflag-pl"></div>pl</a></li>
+                          <li><a lang="pt" class="language-link" href="#"><div class="countryflag countryflag-pt"></div>pt</a></li>
+                          <li><a lang="ru" class="language-link" href="#"><div class="countryflag countryflag-ru"></div>ru</a></li>
+                          <li><a lang="sr" class="language-link" href="#"><div class="countryflag countryflag-rs"></div>sr</a></li>
+                          <li><a lang="sl" class="language-link" href="#"><div class="countryflag countryflag-si"></div>sl</a></li>
+                          <li><a lang="es" class="language-link" href="#"><div class="countryflag countryflag-es"></div>es</a></li>
+                          <li><a lang="tr" class="language-link" href="#"><div class="countryflag countryflag-tr"></div>tr</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="dd-parent-container btn-group require-js-model" data-params='{"name":"dropdown-menu"}'>
+
+                  <div type="button" class="btn btn-info btn-auth dd-parent" data-bind="click:switchCollapse,css:{'active':show}">
+                    Sign in
+                  </div>
+
+                  <div class="dd-item" data-bind="css:{'dd-show':show}" data-width-el=".magic-action-part">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <div class="dd-signin clearfix">
+                          <form action="#">
+
+                            <div class="form-item">
+                              <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-item">
+                              <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-item clearfix">
+                              <button type="button" class="btn btn-default btn-fb pull-left">Facebook login</button>
+                              <button type="button" class="btn btn-primary btn-go pull-right">Go</button>
+                            </div>
+                            <div class="form-item form-password-request clearfix">
+                              <a href="#">Request new password</a>
+                            </div>
+                            <div class="form-item">
+                              <button type="button" class="btn btn-info btn-reg">Register new user</button>
+                            </div>
+                            
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="page-header clearfix">
+      <div class="container">
+        
+        <div class="require-js-model" data-params='{"name":"top","type":"carousel","id":"photoBlock01"}'>
+          <div class="carousel-part clearfix">
+            <div class="carousel slide" data-bind="css:{'carousel-collapsed':collapsed}">
+              <div class="carousel-inner">
+                <!-- ko if: type() == "map" -->
+                  <div id="top-map" class="top-map"></div>
+                  <div class="carousel-header-slogan" data-bind="visible:(mapTitle()||'').length>0">
+                    <div class="img-content">
+                      <p data-bind="text:mapTitle"></p>
+                    </div>
+                  </div>
+                <!-- /ko -->
+                <!-- ko if: type() == "carousel" -->
+                  <div class="carousel-inner" data-bind="foreach:slides">
+                    <div class="item" data-bind="css:{active:$parent.slideId()==$index()}">
+                      <img src="" data-bind="attr:{src:img,alt:alt}" />
+                      <div class="carousel-header-slogan" data-bind="visible:content().length>0">
+                        <div class="img-content">
+                          <p data-bind="text:content"></p>
+                        </div>
+                      </div>
+                      <div class="carousel-label" data-bind="visible:copyright().length>0">
+                        Photo by: <a target="_blank" rel="nofollow" data-bind="attr:{href:copyrightLink},text:copyright"></a>
+                      </div>
+                    </div>
+                  </div>
+                <!-- /ko -->
+              </div>
+              <div class="carousel-collapse" href="#" data-bind="click:switchCollapse">
+                <span class=""></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <!--  <div class="require-js-model" data-params='{"name":"ee"}'>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','map|past-events')">Past Events</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','map|current-events')">Current Events</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','map|next-events')">Next Events</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','carousel|photoBlock01')">PhotoBlock 01</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','carousel|photoBlock02')">PhotoBlock 02</button>
+        </div> -->
+
+        <div class="breadcrumbs-part">
+          <div class="breadcrumbs">
+            <div class="inline first">
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </div> 
+            <span class="delimiter">&rarr;</span> 
+            <div class="inline">
+              <a href="#">
+                <span>Russian open cup final 2012</span>
+              </a>
+            </div> 
+          </div>
+        </div>
+
+        <div class="sharelinks-part">
+          <div class="sharelinks">
+            <!-- <span class='st_facebook_hcount' displayText='Facebook'></span>
+            <span class='st_twitter_hcount' displayText='Tweet'></span>
+            <span class='st_googleplus_hcount' displayText='Google +'></span>
+
+            <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+            <script type="text/javascript">stLight.options({publisher: "2f57b6e3-82b3-4f23-924f-cfd10ec541a9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>-->
+
+            <!-- Facebook share -->
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=326560637494055&version=v2.0";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+            <div class="item item-fb">
+              <div class="fb-share-button" data-width="125" data-type="button_count"></div>
+            </div>
+            <!-- / -->
+
+            <!-- Twitter share -->
+            <div class="item item-tw">
+              <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            </div>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <!-- / -->
+
+            <!-- Google+ share -->
+            <div class="item item-gp">
+              <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+            </div>
+            <script type="text/javascript">
+              window.___gcfg = {lang: 'ru'};
+
+              (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/platform.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+            </script>
+            <!-- / -->
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- Begin page content -->
+    <div class="page-body clearfix">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-main-content tabs-wrapper register-tabs require-js-model" data-params='{"name":"tabs","active":"tab1"}'>
+            <ul class="tabs"> 
+              <li rel="tab1" data-bind="css:{'active':currentRel()==='tab1'}">Register new user</li>
+              <li rel="tab2" data-bind="css:{'active':currentRel()==='tab2'}">Sign In</li>
+              <li rel="tab3" data-bind="css:{'active':currentRel()==='tab3'}">Request new password</li>
+              <li rel="tab4" data-bind="css:{'active':currentRel()==='tab4'}" class="orange-tab">Registration</li>
+            </ul>
+            <div class="tab-container">
+              <div id="tab1" class="tab-content" data-bind="css:{'active':currentRel()===$element.id}">
+                  <div class="register-error-container">
+                    <div class="register-wait24hour">
+                      <span></span>
+                      <!--<button class="register-error-close"></button>-->
+                      <p>The change email procedure has been initialised. You have 24 hours to finish it. Further instructions have been sent to your new email address. Until you confirm your new email the old address will be valid as your login in the system.</p>
+                    </div>
+                    <div class="register-account-created">
+                      <span></span>
+                      <!-- <button class="register-error-close"></button> -->
+                      <p>Your account has been created with Facebook login. Please, fill in the form below.</p>
+                    </div>
+                    <div class="register-password-missing">
+                      <span></span>
+                      <!-- <button class="register-error-close"></button> -->
+                      <p>Your current password is missign or incorrect.</p>
+                    </div>
+                    <div class="register-password-incorrect">
+                      <span></span>
+                      <!-- <button class="register-error-close"></button> -->
+                      <p>Incorrect email or password.<br><a href="#">Forgot your password?</a></p>
+                    </div>
+                    <div class="register-password-already">
+                      <span></span>
+                      <!-- <button class="register-error-close"></button> -->
+                      <p>You are already registered for this event. You can edit your event registration data here. Profile data may be edited here.</p>
+                    </div>
+                  </div> 
+                  <div class="register-tab-container">
+                    <form>
+                      <div class="register-form-left">
+                        <label>Email:</label>
+                      </div>
+                      <div class="register-form-right email-input">
+                        <input placeholder="Enter your email" />
+                        <p>This will be your login.</p>
+                      </div>
+
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Name:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="Enter your name" />
+                        <p>Your name English transcription.</p>
+                      </div>
+
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Surname:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="Enter your surname" />
+                        <p>Your surname English transcription.</p>
+                      </div>
+
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Country:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <div class="register-date-selector register-select-country">
+                          <select id="select-country" class="require-js-model" data-params='{"name":"selectordie","placeholder":"Country","size":"8"}'>
+                            <option value="GS">South Georgia and the South Sandwich Islands</option>
+                            <option value="GR">Greece</option>
+                            <option value="GQ">Equatorial Guinea</option>
+                            <option value="GP">Guadeloupe</option>
+                            <option value="GY">Guyana</option>
+                            <option value="GF">French Guiana</option>
+                            <option value="GE">Georgia</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="PM">Saint Pierre and Miquelon</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="clearfix"></div>
+                      <div class="register-form-left register-gender register-gender-label">
+                        <label>Gender:</label>
+                      </div>
+                      <div class="register-form-right register-gender">
+                        <p class="left-radio">
+                          <input type="radio" value="male" id="male" name="gender"  checked/>
+                          <label for="male">Male</label>
+                        </p>
+                      <p class="left-radio">
+                        <input type="radio" value="Female" id="female" name="gender"/>
+                        <label for="female">Female</label>
+                      </p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left register-date-param">
+                        <label>Date of birth:</label>
+                      </div>
+                      <div class="register-form-right register-date-param active-error">
+                        <p class="date-error">Enter date of birth</p>
+                        <div class="register-date-selector register-select-first">
+                          <select id="select-day" class="require-js-model" data-params='{"name":"selectordie","placeholder":"Day","size":"8"}'>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                          </select>
+                        </div>
+                        <div class="register-date-selector register-select-second">
+                          <select id="select-month" class="require-js-model" data-params='{"name":"selectordie","placeholder":"Month","size":"70"}'>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                          </select>
+                        </div>
+                        <div class="register-date-selector register-select-third">
+                          <select id="select-year" class="require-js-model" data-params='{"name":"selectordie","placeholder":"Year","size":"8"}'>
+                              <option>1930</option>
+                              <option>1931</option>
+                              <option>1932</option>
+                              <option>1933</option>
+                              <option>1934</option>
+                              <option>1935</option>
+                              <option>1936</option>
+                              <option>1937</option>
+                              <option>1938</option>
+                              <option>1939</option>
+                              <option>1941</option>
+                              <option>1941</option>
+                              <option>1942</option>
+                              <option>1943</option>
+                              <option>1944</option>
+                              <option>1945</option>
+                              <option>1946</option>
+                              <option>1947</option>
+                              <option>1948</option>
+                              <option>1949</option>
+                              <option>1950</option>
+                              <option>1951</option>
+                              <option>1952</option>
+                              <option>1953</option>
+                              <option>1954</option>
+                              <option>1955</option>
+                              <option>1956</option>
+                              <option>1957</option>
+                              <option>1958</option>
+                              <option>1959</option>
+                              <option>1960</option>
+                              <option>1961</option>
+                              <option>1962</option>
+                              <option>1963</option>
+                              <option>1964</option>
+                              <option>1965</option>
+                              <option>1966</option>
+                              <option>1967</option>
+                              <option>1968</option>
+                              <option>1969</option>
+                              <option>1970</option>
+                              <option>1971</option>
+                              <option>1972</option>
+                              <option>1973</option>
+                              <option>1974</option>
+                              <option>1975</option>
+                              <option>1976</option>
+                              <option>1977</option>
+                              <option>1978</option>
+                              <option>1979</option>
+                              <option>1980</option>
+                              <option>1981</option>
+                              <option>1982</option>
+                              <option>1983</option>
+                              <option>1984</option>
+                              <option>1985</option>
+                              <option>1986</option>
+                              <option>1987</option>
+                              <option>1988</option>
+                              <option>1989</option>
+                              <option>1990</option>
+                              <option>1991</option>
+                              <option>1992</option>
+                              <option>1993</option>
+                              <option>1994</option>
+                              <option>1995</option>
+                              <option>1996</option>
+                              <option>1997</option>
+                              <option>1998</option>
+                              <option>1999</option>
+                              <option>2000</option>
+                              <option>2001</option>
+                              <option>2002</option>
+                              <option>2003</option>
+                              <option>2004</option>
+                              <option>2005</option>
+                              <option>2006</option>
+                              <option>2007</option>
+                              <option>2008</option>
+                              <option>2009</option>
+                              <option>2010</option>
+                              <option>2011</option>
+                              <option>2012</option>
+                              <option>2013</option>
+                              <option>2014</option>
+                            </select>
+                        </div>   
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Password:</label>
+                      </div>
+                      <!--use class: "weak-password", "good-password", "strong-password"-->
+                      <div class="register-form-right weak-password">
+                        <p class="password-weak">Weak password.</p>
+                        <p class="password-good">Good password.</p>
+                        <p class="password-strong">Strong password.</p>
+                        <input id="pass" name="pass" type="password" value="" placeholder="Enter password" />
+                        <p>Minimum 6 characters.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Repeat password:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input id="pass2" name="pass2" type="password" value="" placeholder="Enter password again" />
+                        <p>Type your password in both fields.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                      </div>
+                      <div class="register-form-right register-button-area">
+                        <button class="register-button-active" disabled>Register</button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </form>
+                  </div>
+              </div>
+
+              <!-- #tab1 -->
+
+              <div id="tab2" class="tab-content" data-bind="css:{'active':currentRel()===$element.id}">
+                <div class="register-error-container">
+                  <div class="register-wait24hour">
+                    <span></span>
+                    <!-- <button class="register-error-close"></button> -->
+                    <p>The change email procedure has been initialised. You have 24 hours to finish it. Further instructions have been sent to your new email address. Until you confirm your new email the old address will be valid as your login in the system.</p>
+                  </div>
+                </div> 
+                <div class="register-tab-container">
+                    <form>
+                      <div class="register-form-left">
+                        <label>Email:</label>
+                      </div>
+                      <div class="register-form-right email-input">
+                        <input placeholder="Enter your email" />
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Password:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input id="password" name="pass" type="password" value="" placeholder="Enter password" />
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                      </div>
+                      <div class="register-form-right register-button-area">
+                        <button class="register-button-active">Log In</button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </form>
+                  </div>
+              </div>
+
+              <!-- #tab2 -->
+
+              <div id="tab3" class="tab-content" data-bind="css:{'active':currentRel()===$element.id}">
+                  <div class="register-error-container">
+                    <div class="register-account-create">
+                      <span></span>
+                     <!--  <button class="register-error-close"></button> -->
+                      <p>Check your email for further instructions.</p>
+                    </div>
+                  </div> 
+                <div class="register-tab-container">
+                    <form>
+                      <div class="register-form-left">
+                        <label>Email:</label>
+                      </div>
+                      <div class="register-form-right email-input">
+                        <input placeholder="Enter your email" />
+                        <p class="register-tip">A password reset link will be sent to your email address.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                      </div>
+                      <div class="register-form-right">
+                        <button class="register-button-active">Restore</button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </form>
+                  </div>
+              </div>
+
+              <!-- #tab3 -->
+
+              <div id="tab4" class="tab-content" data-bind="css:{'active':currentRel()===$element.id}">
+                <div class="register-tab-container">
+                  <form>
+                      <div class="register-form-left">
+                        <label>Address:</label>
+                      </div>
+                      <div class="register-form-right label-error-active">
+                        <input placeholder="" />
+                        <p class="register-input-error">This field is required.</p>
+                        <p>Post code, country, city, street, building, etc.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Mobile phone number:</label>
+                      </div>
+                      <div class="register-form-right label-error-active">
+                        <input placeholder="" />
+                        <p class="register-input-error-red">This field is required.</p>
+                        <p>Your phone number including international code.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>FAI license number:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>CIVL ID:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                        <p><a href="http://civlrankings.fai.org/?a=306&/">Check your CIVL ID.</a></p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left two-string">
+                        <label>National Federation License ID:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                        <p>Used for National rankings calculation.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Club:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                        <p>Your club name.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Pilot's number:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                        <p>The number which you want to have on this competition.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                          <label>T-shirt size:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <div class="register-date-selector register-selector-size label-error-active">
+                          <select id="select-size" class="require-js-model" data-params='{"name":"selectordie","placeholder":"Select your size","size":"8"}'>
+                            <option>XXS</option>
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                          </select>
+                          <p class="register-input-error-red">This field is required.</p>
+                        </div>
+                      </div>
+
+                      <div class="clearfix"></div>
+                      <div class="register-form-left two-string">
+                        <label>Paraglider manufacturer:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Paraglider model:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Paraglider color:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Sponsors:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                        <label>Insurance company:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left two-string">
+                        <label>Insurance policy number:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left two-string">
+                        <label>Your full name in national alphabet:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                        <p>Your full name in national alphabet</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left two-string">
+                        <label>Person to contact in case of emergency:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                        <p>The full name of your contact person and your relationship.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left two-string">
+                        <label>Contact phone number in case of emergency:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <input placeholder="" />
+                        <p>Including international code.</p>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="register-form-left">
+                          <label>Blood type:</label>
+                      </div>
+                      <div class="register-form-right">
+                        <div class="register-date-selector register-select-blood label-error-active">
+                          <select id="blood-type" class="require-js-model" data-params='{"name":"selectordie","placeholder":"Select your type","size":"8"}'>
+                            <option>O(I)-</option>
+                            <option>O(I)+</option>
+                            <option>A(II)-</option>
+                            <option>A(II)+</option>
+                            <option>B(III)-</option>
+                            <option>B(III)+</option>
+                            <option>AB-</option>
+                            <option>AB+</option>
+                          </select>
+                          <p class="register-input-error">This field is required.</p>
+                        </div>
+                      </div>
+                     <div class="clearfix"></div>
+                      <div class="register-form-left">
+                    </div>
+                      <div class="register-form-right register-button-area">
+                        <button class="register-button-active register-button-page2" disabled>Register</button>
+                      </div>
+                      <div class="clearfix"></div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- #tab4 -->
+
+            </div> 
+          </div>
+          <div class="col-sidebar">
+            
+            <!-- <div class="header-part clearfix"></div> -->
+
+            <section class="box-style sponsors-part clearfix">
+              <h2>Sponsors</h2>
+              <div class="content">
+                <div class="register-sponsor-box"><a href="#"><img src="img/colombia-sponsor.jpg" /></a></div>
+                <div class="register-sponsor-box"><a href="#"><img src="img/sport-min.jpg" /></a></div>
+                <div class="register-sponsor-box"><a href="#"><img src="img/serbia-union.jpg" /></a></div>
+              </div>
+            </section>
+            <section class="box-style upcoming-events-part clearfix">
+              <h2>Upcoming events</h2>
+              <div class="content">
+                <div class="items">
+                  <a href="#" class="item dt-freefly">
+                    <!-- <a href="#"> -->
+                      <div class="title clearfix">
+                        13th FAI Women’s World Hang Gliding Class 1 Championship
+                      </div>
+                      <div class="countryflag countryflag-ru"></div>
+                      <div class="time-info">3 days left</div>
+                    <!-- </a> -->
+                  </a>
+                  <a href="#" class="item dt-rectangle">
+                    <!-- <a href="#"> -->
+                      <div class="title clearfix">
+                        Slovenian Open 2014
+                      </div>
+                      <div class="countryflag countryflag-ru"></div>
+                      <div class="time-info">5 days left</div>
+                    <!-- </a> -->
+                  </a>
+                  <a href="#" class="item dt-rectangle">
+                    <!-- <a href="#"> -->
+                      <div class="title clearfix">
+                        Ukrainian and Hungarian open 2014
+                      </div>
+                      <div class="countryflag countryflag-ru"></div>
+                      <div class="time-info">5 days left</div>
+                    <!-- </a> -->
+                  </a>
+                </div>
+                <div class="buttons clearfix">
+                  <button class="btn btn-default btn-font-lager" type="button">All events</button>
+                  <button class="btn btn-primary btn-font-lager" type="button">Create new event</button>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="footer-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-content contact-part">
+            <div class="logo"><img alt="" src="img/logo-lower.png"></div>
+            <p>Airtribune is a mobile app for your trainings and competitions live tracking.</p>
+
+            <p>Moscow, Russia <br>
+            Ph.: +7 (985) 762-72-38 <br>
+            E-mail: <a href="mailto:info@airtribune.com">info@airtribune.com</a></p>
+          </div>
+          <div class="col-content info-one-part">
+            <div class="title">
+              <a href="#">Mobile application</a>
+            </div>
+            <p>Live track and store your trainings, add descriptions and share them with your friends.</p>
+            <p>Follow your friends trainings in real time and replay.</p>
+            <p>Stay visible during competitions and sports events.</p>
+          </div>
+          <div class="col-content info-two-part">
+            <a href="#" class="title">Competition hosting</a>
+            <p>
+              Publish your event in a multi-lingual format, 
+              f specially designed for paragliding and hang gliding competitions. 
+              Get live tracking embedded! It’s free!
+            </p>
+            <a href="#" class="title">Competition live tracking</a>
+            <p>
+              Live track your event using pilots’ smartphones. 
+              Forget about trackers rent and "hand-in/collect" mess.
+            </p>
+            <a href="#" class="title">Retrieve service</a>
+            <p>
+              Turn your computer into a situational awareness center of your competition using Airtribune.
+            </p>
+          </div>
+          <div class="col-content social-part">
+            <span class="title">Follow us</span>
+            <div class="list">
+              <ul>
+                <li><a target="_blank" rel="nofollow" class="tw" href="http://twitter.com/airtribune"><span>Twitter</span></a></li>
+                <li><a target="_blank" rel="nofollow" class="vk" href="http://vk.com/airtribune"><span>VKontakte</span></a></li>
+                <li style="display: none;"><a target="_blank" rel="nofollow" class="lj" href="#"><span>Livejournal</span></a></li>
+                <li><a target="_blank" rel="nofollow" class="fb" href="http://www.facebook.com/Airtribune"><span>Facebook</span></a></li>
+                <li style="display: none;"><a target="_blank" rel="nofollow" class="yt" href="#"><span>Youtube</span></a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        <p class="copyright-part">
+          &copy; 2012 Airtribune. All rights reserved &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="vendor/requirejs/require.js" data-main="js/main"></script>
+  </body>
+</html>

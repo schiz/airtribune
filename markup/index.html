@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=970">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <title>Airtribune</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      window.ATDATA = {};
+      window.ATDATA.eventLists = {
+        "current-events": {
+            "title": "Magical header with current event",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 18, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 42, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 19, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 40, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 18.8, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 42, "city": "Cameli"}]
+        },
+        "next-events": {
+            "title": "Magical header with next event",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 15, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 41, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 16, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 42, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 14, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 43, "city": "Cameli"}]
+        },
+        "past-events": {
+            "title": "Magical header with past events",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 18, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 45, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 20, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 44, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 21, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 42, "city": "Cameli"}]
+        }
+      }
+      window.ATDATA.carousels = {
+        "photoBlock01": [
+          {img:"img/slider/delta-header-1.jpg",alt:"Photo 1",copyright:"Delta Club Annecy",copyrightLink:"http://dca.ffvl.fr"},
+          {img:"img/slider/delta-header-2.jpg",alt:"Photo 2",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+          {img:"img/slider/delta-header-3.jpg",alt:"Photo 3",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+        ],
+        "photoBlock02": [
+          {img:"img/slider/delta-header-4.jpg",alt:"Photo 1",copyright:"Delta Club Annecy",copyrightLink:"http://dca.ffvl.fr"},
+          {img:"img/slider/delta-header-5.jpg",alt:"Photo 2",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+          {img:"img/slider/delta-header-6.png",alt:"Photo 3",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+        ],
+        "contentBlock01": [
+          {img:"img/slider/car-01.jpg",thumb:"img/slider/car-01-thumb.jpg"},
+          {img:"img/slider/car-02.jpg",thumb:"img/slider/car-02-thumb.jpg"},
+          {img:"img/slider/car-03.jpg",thumb:"img/slider/car-03-thumb.jpg"},
+          {img:"img/slider/car-04.jpg",thumb:"img/slider/car-04-thumb.jpg"},
+          {img:"img/slider/car-05.jpg",thumb:"img/slider/car-05-thumb.jpg"},
+          {img:"img/slider/car-06.jpg",thumb:"img/slider/car-06-thumb.jpg"},
+          {img:"img/slider/car-07.jpg",thumb:"img/slider/car-07-thumb.jpg"},
+          {img:"img/slider/car-08.jpg",thumb:"img/slider/car-08-thumb.jpg"},
+          {img:"http://player.vimeo.com/video/76021157",thumb:"http://i.vimeocdn.com/video/452121532_640.jpg"}, // http://vimeo.com/api/v2/video/76021157.json - отсюда брать url на превью
+          {img:"http://www.youtube.com/embed/bWe8PRsW4T0",thumb:"http://img.youtube.com/vi/bWe8PRsW4T0/0.jpg"}
+        ]
+      }
+
+
+      window.ATDATA.minimap = {
+        "hotelPosition01": [ 
+          {"lat":18.9,"lon":43.5,"title":"Super Hotel"}
+        ]
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="header-panel clearfix">
+      <div class="container">
+
+        <div class="header-panel-inner">
+
+          <div class="logo">
+            <a title="Main page" href="#">
+              <img alt="Airtribune.com" src="img/logo.png" class="site-logo image-style-none">
+            </a>
+          </div>
+
+          <div class="right-panel pull-right">
+
+            <div class="nav-part">
+
+              <div class="require-js-model" data-params='{"name":"dropdown-menu"}'>
+                <div class="dd-parent-container">
+                  <div class="btn btn-default btn-mm dd-parent" data-bind="click:switchCollapse,css:{'active':show}">Events</div>
+                  <div class="dd-item main-menu-item" data-bind="css:{'dd-show':show}" data-width-el=".dd-parent">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <ul class="dd-menu clearfix">
+                          <li>
+                            <a href="#">For organizers</a>
+                          </li>
+                          <li>
+                            <a href="#">For sponsors</a>
+                          </li>
+                          <li>
+                            <a href="#">For pilots</a>
+                          </li>
+                          <li>
+                            <a href="#">For viewers</a>
+                          </li>
+                          <li>
+                            <a href="#">For clubs</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="search-part">
+              <input type="text" placeholder="People search" class="form-control">
+            </div>
+
+            <div class="magic-action-part">
+              <div class="btn-group ">
+                <div class="dd-parent-container btn-group require-js-model" data-params='{"name":"dropdown-menu"}'>
+
+                  <div type="button" class="btn btn-info btn-lang dd-parent" data-bind="click:switchCollapse,css:{'active':show}" data-item="">
+                    <div class="countryflag countryflag-us"></div>
+                  </div>
+
+                  <div class="dd-item" data-bind="css:{'dd-show':show}" data-width-el=".magic-action-part">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <ul class="dd-langs clearfix">
+                          <li><a lang="bg" class="language-link" href="#"><div class="countryflag countryflag-bg"></div>bg</a></li>
+                          <li><a lang="hr" class="language-link" href="#"><div class="countryflag countryflag-hr"></div>hr</a></li>
+                          <li><a lang="en" class="language-link" href="#"><div class="countryflag countryflag-gb"></div>en</a></li>
+                          <li><a lang="fr" class="language-link" href="#"><div class="countryflag countryflag-fr"></div>fr</a></li>
+                          <li><a lang="de" class="language-link" href="#"><div class="countryflag countryflag-de"></div>de</a></li>
+                          <li><a lang="it" class="language-link" href="#"><div class="countryflag countryflag-it"></div>it</a></li>
+                          <li><a lang="ja" class="language-link" href="#"><div class="countryflag countryflag-jp"></div>ja</a></li>
+                          <li><a lang="pl" class="language-link" href="#"><div class="countryflag countryflag-pl"></div>pl</a></li>
+                          <li><a lang="pt" class="language-link" href="#"><div class="countryflag countryflag-pt"></div>pt</a></li>
+                          <li><a lang="ru" class="language-link" href="#"><div class="countryflag countryflag-ru"></div>ru</a></li>
+                          <li><a lang="sr" class="language-link" href="#"><div class="countryflag countryflag-rs"></div>sr</a></li>
+                          <li><a lang="sl" class="language-link" href="#"><div class="countryflag countryflag-si"></div>sl</a></li>
+                          <li><a lang="es" class="language-link" href="#"><div class="countryflag countryflag-es"></div>es</a></li>
+                          <li><a lang="tr" class="language-link" href="#"><div class="countryflag countryflag-tr"></div>tr</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="dd-parent-container btn-group require-js-model" data-params='{"name":"dropdown-menu"}'>
+
+                  <div type="button" class="btn btn-info btn-auth dd-parent" data-bind="click:switchCollapse,css:{'active':show}">
+                    Sign in
+                  </div>
+
+                  <div class="dd-item" data-bind="css:{'dd-show':show}" data-width-el=".magic-action-part">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <div class="dd-signin clearfix">
+                          <form action="#">
+
+                            <div class="form-item">
+                              <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-item">
+                              <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-item clearfix">
+                              <button type="button" class="btn btn-default btn-fb pull-left">Facebook login</button>
+                              <button type="button" class="btn btn-primary btn-go pull-right">Go</button>
+                            </div>
+                            <div class="form-item form-password-request clearfix">
+                              <a href="#">Request new password</a>
+                            </div>
+                            <div class="form-item">
+                              <button type="button" class="btn btn-info btn-reg">Register new user</button>
+                            </div>
+                            
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="page-header clearfix">
+      <div class="container">
+        
+        <div class="require-js-model" data-params='{"name":"top","type":"carousel","id":"photoBlock01"}'>
+          <div class="carousel-part clearfix" data-bind="visible:isReady" style="display:none">
+            <div class="carousel slide" data-bind="css:{'carousel-collapsed':collapsed}">
+              <div class="carousel-inner">
+                <!-- ko if: type() == "map" -->
+                  <div class="top-map"></div>
+                  <div class="carousel-header-slogan" data-bind="visible:(mapTitle()||'').length>0">
+                    <div class="img-content">
+                      <p data-bind="text:mapTitle"></p>
+                    </div>
+                  </div>
+                <!-- /ko -->
+                <!-- ko if: type() == "carousel" -->
+                  <div class="carousel-inner" data-bind="foreach:slides">
+                    <div class="item" data-bind="css:{active:$parent.slideId()==$index()}">
+                      <img src="" data-bind="attr:{src:img,alt:alt}" />
+                      <div class="carousel-header-slogan" data-bind="visible:content().length>0">
+                        <div class="img-content">
+                          <p data-bind="text:content"></p>
+                        </div>
+                      </div>
+                      <div class="carousel-label" data-bind="visible:copyright().length>0">
+                        Photo by: <a target="_blank" rel="nofollow" data-bind="attr:{href:copyrightLink},text:copyright"></a>
+                      </div>
+                    </div>
+                  </div>
+                <!-- /ko -->
+              </div>
+              <div class="carousel-collapse" href="#" data-bind="click:switchCollapse">
+                <span class=""></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <!--  <div class="require-js-model" data-params='{"name":"ee"}'>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','map|past-events')">Past Events</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','map|current-events')">Current Events</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','map|next-events')">Next Events</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','carousel|photoBlock01')">PhotoBlock 01</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','carousel|photoBlock02')">PhotoBlock 02</button>
+        </div> -->
+
+        <div class="breadcrumbs-part">
+          <div class="breadcrumbs">
+            <div class="inline first">
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </div> 
+            <span class="delimiter">&rarr;</span> 
+            <div class="inline">
+              <a href="#">
+                <span>Russian open cup final 2012</span>
+              </a>
+            </div> 
+          </div>
+        </div>
+
+        <div class="sharelinks-part">
+          <div class="sharelinks">
+            <!-- <span class='st_facebook_hcount' displayText='Facebook'></span>
+            <span class='st_twitter_hcount' displayText='Tweet'></span>
+            <span class='st_googleplus_hcount' displayText='Google +'></span>
+
+            <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+            <script type="text/javascript">stLight.options({publisher: "2f57b6e3-82b3-4f23-924f-cfd10ec541a9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>-->
+
+            <!-- Facebook share -->
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=326560637494055&version=v2.0";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            
+            <div class="item item-fb">
+              <div class="fb-share-button" data-width="125" data-type="button_count"></div>
+            </div>
+            <!-- / -->
+
+            <!-- Twitter share -->
+            <div class="item item-tw">
+              <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            </div>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <!-- / -->
+
+            <!-- Google+ share -->
+            <div class="item item-gp">
+              <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+            </div>
+            <script type="text/javascript">
+              window.___gcfg = {lang: 'ru'};
+
+              (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/platform.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+            </script>
+            <!-- / -->
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Begin page content -->
+    <div class="page-body clearfix">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-main-content">
+            
+            <section class="news-layout">
+
+              <div class="header-part clearfix">
+                <h2>News</h2>
+              </div>
+
+              <div class="item clearfix">
+                <div class="preview">
+                  <a href="#">
+                    <img width="220" height="140" alt="" src="img/pub/image-1.jpg" class="image-style-race-teaser">
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="title title-pin">
+                    <a href="#">
+                      Russian open cup final 2012.
+                    </a>
+                  </div>
+                  <div class="annotation">
+                    <p>Russian Open Cup — the international paragliding competitions which divided on several stages and a final stage each year.
+                    In year 2012 the organizers of final stage are- Nickolay Bragin, known as very cheerful person, 
+                    and his team from Russian side and Semih Sair,</p>
+                  </div>
+                  <div class="links">
+                    <div class="readmore pull-left">
+                      <a href="#">View more</a>
+                    </div>
+                    <div class="createdon pull-right">4 Dec, 2012</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item clearfix">
+                <div class="preview">
+                  <a href="#">
+                    <img width="220" height="140" alt="" src="img/pub/image-2.jpg" class="image-style-race-teaser">
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="title title-pin">
+                    <a href="#">
+                      Welcome to 2012 European Paragliding Championship!
+                    </a>
+                  </div>
+                  <div class="annotation">
+                    <p>European Paragliding Championship! — the international paragliding competitions which divided on several stages and a final stage each year.
+                      In year 2012 the organizers of final stage are- Nickolay Bragin.</p>
+                  </div>
+                  <div class="links">
+                    <div class="readmore pull-left">
+                      <a href="#">View more</a>
+                    </div>
+                    <div class="createdon pull-right">21 Dec, 2012</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item clearfix">
+                <div class="preview">
+                  <a href="#">
+                    <img width="220" height="140" alt="" src="img/pub/image-3.jpg" class="image-style-race-teaser">
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="title">
+                    <a href="#">
+                      Pre-registrations are open.
+                    </a>
+                  </div>
+                  <div class="annotation">
+                    <p>Russian Open Cup — the international paragliding competitions which divided on several stages and a final stage each year.
+                    In year 2012 the organizers of final stage are- Nickolay Bragin.</p>
+                  </div>
+                  <div class="links">
+                    <div class="readmore pull-left">
+                      <a href="#">View more</a>
+                    </div>
+                    <div class="createdon pull-right">4 Dec, 2012</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item clearfix">
+                <div class="preview">
+                  <a href="#">
+                    <img width="220" height="140" alt="" src="img/pub/image-1.jpg" class="image-style-race-teaser">
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="title">
+                    <a href="#">
+                      Russian open cup final 2012.
+                    </a>
+                  </div>
+                  <div class="annotation">
+                    <p>Russian Open Cup — the international paragliding competitions which divided on several stages and a final stage each year.
+                    In year 2012 the organizers of final stage are- Nickolay Bragin, known as very cheerful person, 
+                    and his team from Russian side and Semih Sair,</p>
+                  </div>
+                  <div class="links">
+                    <div class="readmore pull-left">
+                      <a href="#">View more</a>
+                    </div>
+                    <div class="createdon pull-right">4 Dec, 2012</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item clearfix">
+                <div class="preview">
+                  <a href="#">
+                    <img width="220" height="140" alt="" src="img/pub/image-2.jpg" class="image-style-race-teaser">
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="title">
+                    <a href="#">
+                      Welcome to 2012 European Paragliding Championship!
+                    </a>
+                  </div>
+                  <div class="annotation">
+                    <p>European Paragliding Championship! — the international paragliding competitions which divided on several stages and a final stage each year.
+                      In year 2012 the organizers of final stage are...</p>
+                  </div>
+                  <div class="links">
+                    <div class="readmore pull-left">
+                      <a href="#">View more</a>
+                    </div>
+                    <div class="createdon pull-right">21 Dec, 2012</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item clearfix">
+                <div class="preview">
+                  <a href="#">
+                    <img width="220" height="140" alt="" src="img/pub/image-3.jpg" class="image-style-race-teaser">
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="title">
+                    <a href="#">
+                      Pre-registrations are open.
+                    </a>
+                  </div>
+                  <div class="annotation">
+                    <p>Russian Open Cup — the international paragliding competitions which divided on several stages and a final stage each year.
+                    In year 2012 the organizers of final stage are- Nickolay Bragin.</p>
+                  </div>
+                  <div class="links">
+                    <div class="readmore pull-left">
+                      <a href="#">View more</a>
+                    </div>
+                    <div class="createdon pull-right">4 Dec, 2012</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item clearfix">
+                <div class="preview">
+                  <a href="#">
+                    <img width="220" height="140" alt="" src="img/pub/image-2.jpg" class="image-style-race-teaser">
+                  </a>
+                </div>
+                <div class="content">
+                  <div class="title">
+                    <a href="#">
+                      Welcome to 2012 European Paragliding Championship!
+                    </a>
+                  </div>
+                  <div class="annotation">
+                    <p>European Paragliding Championship! — the international paragliding competitions which divided on several stages and a final stage each year.
+                      In year 2012 the organizers of final stage are...</p>
+                  </div>
+                  <div class="links">
+                    <div class="readmore pull-left">
+                      <a href="#">View more</a>
+                    </div>
+                    <div class="createdon pull-right">21 Dec, 2012</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pagination-part">
+                <ul class="pagination">
+                  <li><a href="#">&lt;</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li class="active"><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">&gt;</a></li>
+                </ul>
+              </div>
+
+            </section>
+
+
+          </div>
+          <div class="col-sidebar">
+            
+            <!-- <div class="header-part clearfix"></div> -->
+
+            <section class="box-style recently-viewed-part clearfix">
+              <h2>Recently viewed</h2>
+              <div class="content">
+                <ul>
+                  <li>
+                    <a href="#">Russian open cup final 2012.</a>
+                  </li>
+                  <li>
+                    <a href="#">12th FAI european paragliding championship</a>
+                  </li>
+                  <li>
+                    <a href="#">13 FAI World Paragliding championship</a>
+                  </li>
+                  <li>
+                    <a href="#">Parang Open 2013 Pre PWC</a>
+                  </li>
+                  <li>
+                    <a href="#">Iran championship 2013</a>
+                  </li>
+                  <li>
+                    <a href="#">Bayramoren Open 2013</a>
+                  </li>
+                  <li>
+                    <a href="#">Ukrainian and Bulgarian Open 2013</a>
+                  </li>
+                  <li>
+                    <a href="#">Sicevo Open Pre-PWC 2013 & Serbian National</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="box-style upcoming-events-part clearfix">
+              <h2>Upcoming events</h2>
+              <div class="content">
+                <div class="items">
+                  <a href="#" class="item dt-freefly">
+                    <!-- <a href="#"> -->
+                      <div class="title clearfix">
+                        13th FAI Women’s World Hang Gliding Class 1 Championship
+                      </div>
+                      <div class="countryflag countryflag-ru"></div>
+                      <div class="time-info">3 days left</div>
+                    <!-- </a> -->
+                  </a>
+                  <a href="#" class="item dt-rectangle">
+                    <!-- <a href="#"> -->
+                      <div class="title clearfix">
+                        Slovenian Open 2014
+                      </div>
+                      <div class="countryflag countryflag-ru"></div>
+                      <div class="time-info">5 days left</div>
+                    <!-- </a> -->
+                  </a>
+                  <a href="#" class="item dt-rectangle">
+                    <!-- <a href="#"> -->
+                      <div class="title clearfix">
+                        Ukrainian and Hungarian open 2014
+                      </div>
+                      <div class="countryflag countryflag-ru"></div>
+                      <div class="time-info">5 days left</div>
+                    <!-- </a> -->
+                  </a>
+                </div>
+                <div class="buttons clearfix">
+                  <button class="btn btn-default btn-font-lager" type="button">All events</button>
+                  <button class="btn btn-primary btn-font-lager" type="button">Create new event</button>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-content contact-part">
+            <div class="logo"><img alt="" src="img/logo-lower.png"></div>
+            <p>Airtribune is a mobile app for your trainings and competitions live tracking.</p>
+
+            <p>Moscow, Russia <br>
+            Ph.: +7 (985) 762-72-38 <br>
+            E-mail: <a href="mailto:info@airtribune.com">info@airtribune.com</a></p>
+          </div>
+          <div class="col-content info-one-part">
+            <div class="title">
+              <a href="#">Mobile application</a>
+            </div>
+            <p>Live track and store your trainings, add descriptions and share them with your friends.</p>
+            <p>Follow your friends trainings in real time and replay.</p>
+            <p>Stay visible during competitions and sports events.</p>
+          </div>
+          <div class="col-content info-two-part">
+            <a href="#" class="title">Competition hosting</a>
+            <p>
+              Publish your event in a multi-lingual format, 
+              f specially designed for paragliding and hang gliding competitions. 
+              Get live tracking embedded! It’s free!
+            </p>
+            <a href="#" class="title">Competition live tracking</a>
+            <p>
+              Live track your event using pilots’ smartphones. 
+              Forget about trackers rent and "hand-in/collect" mess.
+            </p>
+            <a href="#" class="title">Retrieve service</a>
+            <p>
+              Turn your computer into a situational awareness center of your competition using Airtribune.
+            </p>
+          </div>
+          <div class="col-content social-part">
+            <span class="title">Follow us</span>
+            <div class="list">
+              <ul>
+                <li><a target="_blank" rel="nofollow" class="tw" href="http://twitter.com/airtribune"><span>Twitter</span></a></li>
+                <li><a target="_blank" rel="nofollow" class="vk" href="http://vk.com/airtribune"><span>VKontakte</span></a></li>
+                <li style="display: none;"><a target="_blank" rel="nofollow" class="lj" href="#"><span>Livejournal</span></a></li>
+                <li><a target="_blank" rel="nofollow" class="fb" href="http://www.facebook.com/Airtribune"><span>Facebook</span></a></li>
+                <li style="display: none;"><a target="_blank" rel="nofollow" class="yt" href="#"><span>Youtube</span></a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        <p class="copyright-part">
+          &copy; 2012 Airtribune. All rights reserved &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Lightbox layout -->
+    <div class="lightbox-wrapper require-js-model" data-params='{"name":"lightbox"}'>
+      <div class="lightbox-container" data-bind="visible:isReady()&&isVisible()" style="display:none">
+        <div class="lightbox-fade" data-bind="click:close"></div>
+        <div class="lightbox-window" data-bind="style:{left:containerLeft()+'px',top:containerTop()+'px'}">
+          <div class="lightbox-pic-container" data-bind="style:{width:imgWidth()+'px',height:imgHeight()+'px'}">
+            <!-- ko if: isLoading -->
+              <div class="lightbox-loading"></div>
+            <!-- /ko -->
+            <!-- ko if: !isLoading() && img() -->
+              <!-- ko if: img().isVimeo() -->
+                <iframe class="media-vimeo-player" data-bind="attr:{src:img().img,width:imgWidth()+'px',height:imgHeight()+'px'}" frameborder="0" allowfullscreen ></iframe>
+              <!-- /ko -->
+              <!-- ko if: img().isYoutube() -->
+                <iframe class="media-youtube-player" data-bind="attr:{src:img().img,width:imgWidth()+'px',height:imgHeight()+'px'}" frameborder="0" allowfullscreen></iframe>
+              <!-- /ko -->
+              <!-- ko if: !img().isVideo() -->
+                <img class="lightbox-pic" data-bind="attr:{src:img().img,alt:img().alt},style:{width:imgWidth()+'px',height:imgHeight()+'px'}">
+              <!-- /ko -->
+            <!-- /ko -->
+
+          </div>
+            <div class="lightbox-controls clearfix">
+              <!-- ko if: !isLoading() && img() -->
+                <div class="lightbox-next-prev">
+                  <button class="btn btn-default" data-bind="visible:prevEnabled,click:prev">prev</button>
+                  <button class="btn btn-default" data-bind="visible:nextEnabled,click:next">next</button>
+                </div>
+                <div class="lightbox-close">
+                  <button class="btn btn-default" data-bind="click:close">close</button>
+                </div>
+              <!-- /ko -->
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Lightbox layout -->
+
+    <script type="text/javascript" src="vendor/requirejs/require.js" data-main="js/main"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "selectordie",
+  "homepage": "https://github.com/vestman/Select-or-Die",
+  "version": "0.1.3",
+  "_release": "0.1.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.3",
+    "commit": "419a081ecf41b7f73124b3df0800b7e3bbe354ff"
+  },
+  "_source": "https://github.com/vestman/Select-or-Die.git",
+  "_target": "0.1.3",
+  "_originalSource": "https://github.com/vestman/Select-or-Die.git"
+}

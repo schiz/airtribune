@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=970">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <title>Airtribune</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      window.ATDATA = {};
+      window.ATDATA.eventLists = {
+        "current-events": {
+            "title": "Magical header with current event",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 18, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 42, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 19, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 40, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 18.8, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 42, "city": "Cameli"}]
+        },
+        "next-events": {
+            "title": "Magical header with next event",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 15, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 41, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 16, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 42, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 14, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 43, "city": "Cameli"}]
+        },
+        "past-events": {
+            "title": "Magical header with past events",
+            "content": [{"url": "/contest/euro2014", "end_time": "2014-08-16", "title": "13th FAI European Paragliding Championship", "lat": 18, "country": {"ioc_code": "SRB", "flag": "/static/flags/rs.gif", "code": "RS", "name": "Serbia"}, "start_time": "2014-08-03", "sport": "paragliding", "lon": 45, "city": "Kopaonik"}, {"url": "/contest/test-lame-contest", "end_time": "2014-05-18", "title": "Test lame contest", "lat": 20, "country": {"ioc_code": "BAH", "flag": "/static/flags/bs.gif", "code": "BS", "name": "Bahamas"}, "start_time": "2014-05-17", "sport": "paragliding", "lon": 44, "city": "Nassau"}, {"url": "/contest/cameli-open-pre-pwc-2014", "end_time": "2014-09-14", "title": "Cameli Open Pre PWC 2014", "lat": 21, "country": {"ioc_code": "TUR", "flag": "/static/flags/tr.gif", "code": "TR", "name": "Turkey"}, "start_time": "2014-09-08", "sport": "paragliding", "lon": 42, "city": "Cameli"}]
+        }
+      }
+      window.ATDATA.carousels = {
+        "photoBlock01": [
+          {img:"img/slider/delta-header-1.jpg",alt:"Photo 1",copyright:"Delta Club Annecy",copyrightLink:"http://dca.ffvl.fr"},
+          {img:"img/slider/delta-header-2.jpg",alt:"Photo 2",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+          {img:"img/slider/delta-header-3.jpg",alt:"Photo 3",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+        ],
+        "photoBlock02": [
+          {img:"img/slider/delta-header-4.jpg",alt:"Photo 1",copyright:"Delta Club Annecy",copyrightLink:"http://dca.ffvl.fr"},
+          {img:"img/slider/delta-header-5.jpg",alt:"Photo 2",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+          {img:"img/slider/delta-header-6.png",alt:"Photo 3",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+        ]
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="header-panel clearfix">
+      <div class="container">
+
+        <div class="header-panel-inner">
+
+          <div class="logo">
+            <a title="Main page" href="#">
+              <img alt="Airtribune.com" src="img/logo.png" class="site-logo image-style-none">
+            </a>
+          </div>
+
+          <div class="right-panel pull-right">
+
+            <div class="nav-part">
+
+              <div class="require-js-model" data-params='{"name":"dropdown-menu"}'>
+                <div class="dd-parent-container">
+                  <div class="btn btn-default btn-mm dd-parent" data-bind="click:switchCollapse,css:{'active':show}">Events</div>
+                  <div class="dd-item main-menu-item" data-bind="css:{'dd-show':show}" data-width-el=".dd-parent">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <ul class="dd-menu clearfix">
+                          <li>
+                            <a href="#">For organizers</a>
+                          </li>
+                          <li>
+                            <a href="#">For sponsors</a>
+                          </li>
+                          <li>
+                            <a href="#">For pilots</a>
+                          </li>
+                          <li>
+                            <a href="#">For viewers</a>
+                          </li>
+                          <li>
+                            <a href="#">For clubs</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="search-part">
+              <input type="text" placeholder="People search" class="form-control">
+            </div>
+
+            <div class="magic-action-part">
+              <div class="btn-group ">
+                <div class="dd-parent-container btn-group require-js-model" data-params='{"name":"dropdown-menu"}'>
+
+                  <div type="button" class="btn btn-info btn-lang dd-parent" data-bind="click:switchCollapse,css:{'active':show}" data-item="">
+                    <div class="countryflag countryflag-us"></div>
+                  </div>
+
+                  <div class="dd-item" data-bind="css:{'dd-show':show}" data-width-el=".magic-action-part">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <ul class="dd-langs clearfix">
+                          <li><a lang="bg" class="language-link" href="#"><div class="countryflag countryflag-bg"></div>bg</a></li>
+                          <li><a lang="hr" class="language-link" href="#"><div class="countryflag countryflag-hr"></div>hr</a></li>
+                          <li><a lang="en" class="language-link" href="#"><div class="countryflag countryflag-gb"></div>en</a></li>
+                          <li><a lang="fr" class="language-link" href="#"><div class="countryflag countryflag-fr"></div>fr</a></li>
+                          <li><a lang="de" class="language-link" href="#"><div class="countryflag countryflag-de"></div>de</a></li>
+                          <li><a lang="it" class="language-link" href="#"><div class="countryflag countryflag-it"></div>it</a></li>
+                          <li><a lang="ja" class="language-link" href="#"><div class="countryflag countryflag-jp"></div>ja</a></li>
+                          <li><a lang="pl" class="language-link" href="#"><div class="countryflag countryflag-pl"></div>pl</a></li>
+                          <li><a lang="pt" class="language-link" href="#"><div class="countryflag countryflag-pt"></div>pt</a></li>
+                          <li><a lang="ru" class="language-link" href="#"><div class="countryflag countryflag-ru"></div>ru</a></li>
+                          <li><a lang="sr" class="language-link" href="#"><div class="countryflag countryflag-rs"></div>sr</a></li>
+                          <li><a lang="sl" class="language-link" href="#"><div class="countryflag countryflag-si"></div>sl</a></li>
+                          <li><a lang="es" class="language-link" href="#"><div class="countryflag countryflag-es"></div>es</a></li>
+                          <li><a lang="tr" class="language-link" href="#"><div class="countryflag countryflag-tr"></div>tr</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="dd-parent-container btn-group require-js-model" data-params='{"name":"dropdown-menu"}'>
+
+                  <div type="button" class="btn btn-info btn-auth dd-parent" data-bind="click:switchCollapse,css:{'active':show}">
+                    Sign in
+                  </div>
+
+                  <div class="dd-item" data-bind="css:{'dd-show':show}" data-width-el=".magic-action-part">
+                    <div class="dd-item-content">
+                      <div class="dd-item-content-inner">
+                        <div class="dd-signin clearfix">
+                          <form action="#">
+
+                            <div class="form-item">
+                              <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-item">
+                              <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-item clearfix">
+                              <button type="button" class="btn btn-default btn-fb pull-left">Facebook login</button>
+                              <button type="button" class="btn btn-primary btn-go pull-right">Go</button>
+                            </div>
+                            <div class="form-item form-password-request clearfix">
+                              <a href="#">Request new password</a>
+                            </div>
+                            <div class="form-item">
+                              <button type="button" class="btn btn-info btn-reg">Register new user</button>
+                            </div>
+                            
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="page-header clearfix">
+      <div class="container">
+        
+        <div class="require-js-model" data-params='{"name":"top","type":"carousel","id":"photoBlock01"}'>
+          <div class="carousel-part clearfix">
+            <div class="carousel slide" data-bind="css:{'carousel-collapsed':collapsed}">
+              <div class="carousel-inner">
+                <!-- ko if: type() == "map" -->
+                  <div id="top-map" class="top-map"></div>
+                  <div class="carousel-header-slogan" data-bind="visible:(mapTitle()||'').length>0">
+                    <div class="img-content">
+                      <p data-bind="text:mapTitle"></p>
+                    </div>
+                  </div>
+                <!-- /ko -->
+                <!-- ko if: type() == "carousel" -->
+                  <div class="carousel-inner" data-bind="foreach:slides">
+                    <div class="item" data-bind="css:{active:$parent.slideId()==$index()}">
+                      <img src="" data-bind="attr:{src:img,alt:alt}" />
+                      <div class="carousel-header-slogan" data-bind="visible:content().length>0">
+                        <div class="img-content">
+                          <p data-bind="text:content"></p>
+                        </div>
+                      </div>
+                      <div class="carousel-label" data-bind="visible:copyright().length>0">
+                        Photo by: <a target="_blank" rel="nofollow" data-bind="attr:{href:copyrightLink},text:copyright"></a>
+                      </div>
+                    </div>
+                  </div>
+                <!-- /ko -->
+              </div>
+              <div class="carousel-collapse" href="#" data-bind="click:switchCollapse">
+                <span class=""></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="require-js-model" data-params='{"name":"ee"}'>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','map|past-events')">Past Events</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','map|current-events')">Current Events</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','map|next-events')">Next Events</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','carousel|photoBlock01')">PhotoBlock 01</button>
+          <button class="btn btn-default" data-bind="click:send.bind($data,'top.setTypeId','carousel|photoBlock02')">PhotoBlock 02</button>
+        </div> -->
+
+        <div class="breadcrumbs-part">
+          <div class="breadcrumbs">
+            <div class="inline first">
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </div> 
+            <span class="delimiter">&rarr;</span> 
+            <div class="inline">
+              <a href="#">
+                <span>Russian open cup final 2012</span>
+              </a>
+            </div> 
+          </div>
+        </div>
+
+        <div class="sharelinks-part">
+          <div class="sharelinks">
+            <!-- <span class='st_facebook_hcount' displayText='Facebook'></span>
+            <span class='st_twitter_hcount' displayText='Tweet'></span>
+            <span class='st_googleplus_hcount' displayText='Google +'></span>
+
+            <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+            <script type="text/javascript">stLight.options({publisher: "2f57b6e3-82b3-4f23-924f-cfd10ec541a9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>-->
+
+            <!-- Facebook share -->
+
+            <div class="item item-fb">
+
+              <div id="fb-root"></div>
+              <script>
+              (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=326560637494055&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));
+              </script>
+
+              <div class="fb-share-button" data-width="125" data-type="button_count"></div>
+            </div>
+            <!-- / -->
+
+            <!-- Twitter share -->
+            <div class="item item-tw">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            <!-- / -->
+
+            <!-- Google+ share -->
+            <div class="item item-gp">
+              <g:plus action="share" annotation="bubble"></g:plus>
+
+              <script type="text/javascript">
+                window.___gcfg = {
+                  lang: 'en-US'
+                };
+
+                (function() {
+                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                  po.src = 'https://apis.google.com/js/plusone.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+              </script>
+            </div>
+            <!-- / -->
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- Begin page content -->
+    <div class="page-body clearfix">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-main-content tabs-wrapper events-general-tabs require-js-model" data-params='{"name":"tabs","active":"current_tab"}'>
+            <ul class="tabs">
+              <li rel="current_tab" data-top="map|current-events" data-bind="css:{'active':currentRel()==='current_tab'}">Current</li>
+              <li rel="next_tab" data-top="map|next-events" data-bind="css:{'active':currentRel()==='next_tab'}">Next</li>
+              <li rel="past_tab" data-top="map|past-events" data-bind="css:{'active':currentRel()==='past_tab'}">Past</li>
+              <li rel="create_event_tab" data-bind="css:{'active':currentRel()==='create_event_tab'}" class="orange-tab pull-right">Create event</li>
+            </ul>
+            <div class="tab-container">
+
+              <!-- current_tab -->
+
+              <div id="current_tab" class="tab-content" data-bind="css:{'active':currentRel()===$element.id}">
+                <div class="events-general-container">
+
+                  <div class="accordion-content">
+                    <div class="items">
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-freefly"></span>
+                          <span class="title">12th  FAI European Paragliding Championship</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-rectangle"></span>
+                          <span class="title">Liga Centro Round 1</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-freefly"></span>
+                          <span class="title">SkyTribe XC 2014 – Romanian Nationals</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- next_tab -->
+
+              <div id="next_tab" class="tab-content" data-bind="css:{'active':currentRel()===$element.id}">
+                <div class="events-general-container">
+                  <a href="#" class="accordion-header expanded">
+                    2014
+                  </a>
+                  <div class="accordion-content">
+                    <div class="items">
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-freefly"></span>
+                          <span class="title">12th  FAI European Paragliding Championship</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-freefly"></span>
+                          <span class="title">Liga Centro Round 1</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-rectangle"></span>
+                          <span class="title">SkyTribe XC 2014 – Romanian Nationals</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- past_tab -->
+
+              <div id="past_tab" class="tab-content" data-bind="css:{'active':currentRel()===$element.id}">
+                <div class="events-general-container">
+                  
+                  <a href="#" class="accordion-header expanded">
+                    2014
+                  </a>
+                  <div class="accordion-content">
+                    <div class="items">
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-freefly"></span>
+                          <span class="title">12th  FAI European Paragliding Championship</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-rectangle"></span>
+                          <span class="title">Liga Centro Round 1</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-rectangle"></span>
+                          <span class="title">SkyTribe XC 2014 – Romanian Nationals</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="#" class="accordion-header expanded">
+                    2013
+                  </a>
+                  <div class="accordion-content">
+                    <div class="items">
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-freefly"></span>
+                          <span class="title">12th  FAI European Paragliding Championship</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-freefly"></span>
+                          <span class="title">Liga Centro Round 1</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a href="#" class="item-link">
+                          <span class="sport-icon dt-freefly"></span>
+                          <span class="title">SkyTribe XC 2014 – Romanian Nationals</span>
+                          <span class="dates">01 — 15 Sep, 2012</span>
+                          <span class="place">France, Saint Andre les Alpes</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- create_event_tab -->
+
+              <div id="create_event_tab" class="tab-content" data-bind="css:{'active':currentRel()===$element.id}">
+                <div class="events-general-container">
+                  
+                </div>
+              </div>
+
+              <!-- /create_event_tab -->
+
+            </div> 
+          </div>
+          <div class="col-sidebar">
+            
+            <!-- <div class="header-part clearfix"></div> -->
+
+            <section class="box-style sponsors-part clearfix">
+              <h2>Sponsors</h2>
+              <div class="content">
+                <div class="register-sponsor-box"><a href="#"><img src="img/colombia-sponsor.jpg" /></a></div>
+                <div class="register-sponsor-box"><a href="#"><img src="img/sport-min.jpg" /></a></div>
+                <div class="register-sponsor-box"><a href="#"><img src="img/serbia-union.jpg" /></a></div>
+              </div>
+            </section>
+            <section class="box-style upcoming-events-part clearfix">
+              <h2>Upcoming events</h2>
+              <div class="content">
+                <div class="items">
+                  <a href="#" class="item dt-freefly">
+                    <!-- <a href="#"> -->
+                      <div class="title clearfix">
+                        13th FAI Women’s World Hang Gliding Class 1 Championship
+                      </div>
+                      <div class="countryflag countryflag-ru"></div>
+                      <div class="time-info">3 days left</div>
+                    <!-- </a> -->
+                  </a>
+                  <a href="#" class="item dt-rectangle">
+                    <!-- <a href="#"> -->
+                      <div class="title clearfix">
+                        Slovenian Open 2014
+                      </div>
+                      <div class="countryflag countryflag-ru"></div>
+                      <div class="time-info">5 days left</div>
+                    <!-- </a> -->
+                  </a>
+                  <a href="#" class="item dt-rectangle">
+                    <!-- <a href="#"> -->
+                      <div class="title clearfix">
+                        Ukrainian and Hungarian open 2014
+                      </div>
+                      <div class="countryflag countryflag-ru"></div>
+                      <div class="time-info">5 days left</div>
+                    <!-- </a> -->
+                  </a>
+                </div>
+                <div class="buttons clearfix">
+                  <button class="btn btn-default btn-font-lager" type="button">All events</button>
+                  <button class="btn btn-primary btn-font-lager" type="button">Create new event</button>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="footer-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-content contact-part">
+            <div class="logo"><img alt="" src="img/logo-lower.png"></div>
+            <p>Airtribune is a mobile app for your trainings and competitions live tracking.</p>
+
+            <p>Moscow, Russia <br>
+            Ph.: +7 (985) 762-72-38 <br>
+            E-mail: <a href="mailto:info@airtribune.com">info@airtribune.com</a></p>
+          </div>
+          <div class="col-content info-one-part">
+            <div class="title">
+              <a href="#">Mobile application</a>
+            </div>
+            <p>Live track and store your trainings, add descriptions and share them with your friends.</p>
+            <p>Follow your friends trainings in real time and replay.</p>
+            <p>Stay visible during competitions and sports events.</p>
+          </div>
+          <div class="col-content info-two-part">
+            <a href="#" class="title">Competition hosting</a>
+            <p>
+              Publish your event in a multi-lingual format, 
+              f specially designed for paragliding and hang gliding competitions. 
+              Get live tracking embedded! It’s free!
+            </p>
+            <a href="#" class="title">Competition live tracking</a>
+            <p>
+              Live track your event using pilots’ smartphones. 
+              Forget about trackers rent and "hand-in/collect" mess.
+            </p>
+            <a href="#" class="title">Retrieve service</a>
+            <p>
+              Turn your computer into a situational awareness center of your competition using Airtribune.
+            </p>
+          </div>
+          <div class="col-content social-part">
+            <span class="title">Follow us</span>
+            <div class="list">
+              <ul>
+                <li><a target="_blank" rel="nofollow" class="tw" href="http://twitter.com/airtribune"><span>Twitter</span></a></li>
+                <li><a target="_blank" rel="nofollow" class="vk" href="http://vk.com/airtribune"><span>VKontakte</span></a></li>
+                <li style="display: none;"><a target="_blank" rel="nofollow" class="lj" href="#"><span>Livejournal</span></a></li>
+                <li><a target="_blank" rel="nofollow" class="fb" href="http://www.facebook.com/Airtribune"><span>Facebook</span></a></li>
+                <li style="display: none;"><a target="_blank" rel="nofollow" class="yt" href="#"><span>Youtube</span></a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        <p class="copyright-part">
+          &copy; 2012 Airtribune. All rights reserved &middot; <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="vendor/requirejs/require.js" data-main="js/main"></script>
+  </body>
+</html>

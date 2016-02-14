@@ -1,0 +1,963 @@
+  // body {
+  //   font-family: arial;
+  // }
+
+  ul::-webkit-scrollbar {
+      width: 4px;
+  }
+  ul::-webkit-scrollbar-track {
+      -webkit-box-shadow: transparent;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+  }
+  ul::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: #1cb7f1;
+      -webkit-box-shadow: transparent;
+  }
+  ul::-webkit-scrollbar-thumb:window-inactive {
+      background: rgba(255, 0, 0, 0.4);
+  }
+
+  a:focus {
+    outline: none;
+  }
+  .register-tab-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e4e9eb;
+    padding: 45px 25px 73px 10px;
+  }
+
+  // .clearfix {
+  //   clear: both;
+  // }
+
+  .register-form-left {
+    float: left;
+    width: 190px;
+    max-height: 80px;
+    text-align: right;
+    position: relative;
+    padding-bottom: 45px;
+  }
+
+  .register-form-left label {
+    font-weight: normal;
+  }
+
+  .register-form-right input {
+    width: 245px !important;
+    height: 32px;
+    padding: 0 10px;
+  }
+
+  .register-form-right {
+    float: right;
+    width: 455px;
+  }
+
+  .register-form-right p {
+    font-size: 12px;
+    color: #8898a4;
+    font-style: italic;
+    margin-top: 4px;
+    position: absolute;
+    margin-top: 35px;
+  }
+
+  .register-form-right a:hover {
+    text-decoration: none;
+  }
+
+  .register-tab-container form input {
+    width: 240px;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #d7dbdd;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0 10px;
+    color: #2b3033;
+    float: left;
+  }
+
+  .register-tab-container input::-moz-placeholder {
+    color: #b8babb;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  .register-tab-container input::-webkit-input-placeholder {  
+    color: #b8babb;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 3px;
+    font-weight: 400;
+  }
+
+  .register-tab-container .email-input input {
+    width: 310px !important;
+  }
+
+  .register-tab-container form label {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .register-error-container {
+    padding: 0px 0px 50px 0px;
+  }
+
+  .register-password-missing {
+    background: #ff686c;
+    position: relative;
+    width: 700px;
+    border-radius: 2px;
+    padding-left: 90px;
+  }
+
+  .register-password-missing span {
+    content: " ";
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: -51px -51px ;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 11px;
+    margin-top: 11px;
+  }
+
+  .register-password-missing p {
+    padding: 26px 0px 26px 0px;
+    width: 555px;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .register-password-already {
+    background: #ededed;
+    position: relative;
+    width: 700px;
+    border-radius: 2px;
+    padding-left: 90px;
+  }
+
+  .register-password-already span {
+    content: " ";
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: -51px -202px ;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 11px;
+    margin-top: 11px;
+  }
+
+  .register-password-already p {
+    padding: 16px 0px 16px 0px;
+    width: 555px;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #848484;
+  }
+
+  .register-error-close {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    cursor: default;
+    right: 3px;
+    margin-top: 3px;
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: -1px -201px ;
+    width: 14px;
+    height: 14px;
+    border: none;
+  }
+
+  .register-password-incorrect {
+    background: #ff686c;
+    position: relative;
+    width: 700px;
+    border-radius: 2px;
+    padding-left: 90px;
+  }
+
+  .register-password-incorrect span {
+    content: " ";
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: -51px -51px ;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 11px;
+    margin-top: 11px;
+  }
+
+  .register-password-incorrect p {
+    padding: 17px 0px 17px 0px;
+    width: 555px;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .register-wait24hour {
+    background: #f1bc1c;
+    position: relative;
+    width: 700px;
+    border-radius: 2px;
+    padding-left: 90px;
+  }
+
+  .register-wait24hour span {
+    content: " ";
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: -51px -101px ;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 11px;
+    margin-top: 11px;
+  }
+
+  .register-wait24hour p {
+    padding: 13px 0px 13px 0px;
+    width: 555px;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .register-account-created {
+    background: #a1df50;
+    min-height: 65px;
+    position: relative;
+    width: 700px;
+    border-radius: 2px;
+    padding-left: 90px;
+  }
+
+  .register-account-created span {
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: -51px -151px ;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 11px;
+    margin-top: 11px;
+  }
+
+  .register-account-created p {
+    padding: 17px 0px 17px 0px;
+    width: 555px;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .register-account-create {
+    background: #a1df50;
+    min-height: 65px;
+    position: relative;
+    width: 700px;
+    border-radius: 2px;
+    padding-left: 90px;
+  }
+
+  .register-account-create span {
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: -51px -151px ;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 11px;
+    margin-top: 11px;
+  }
+
+  .register-account-create p {
+    padding: 25px 0px 25px 0px;
+    width: 555px;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .register-gender p {
+    display:block;
+    position: relative;
+    margin:  10px 0;
+  }
+
+  .register-gender input + label {
+    padding-left: 2px;
+    vertical-align: middle;
+  }
+
+  .register-gender input[type="checkbox"],
+  .register-gender input[type="radio"]{
+    width: 24px;
+    height: 26px;
+    position:relative;
+    z-index: 10;
+    opacity: 0;
+    vertical-align: middle;
+  }
+  .register-gender input[type="radio"] {
+    height: 22px;
+    width: 22px;
+  }
+  .register-gender input + label:before {
+    content: " ";
+    background: url(../img/login-checkboxa.png) no-repeat left -2px;
+    width: 24px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display:inline-block;
+    z-index: 5;
+  }
+  .register-gender input[type="checkbox"] + label:before {
+    background-position: left -3px;
+  }
+  .register-gender input[type="radio"] + label:before {
+    background-position: -36px -3px;
+  }
+       
+  /* HOVER STYLES */
+  .register-gender input[type="checkbox"]:hover + label:before,
+    .register-gender input[type="checkbox"] + label:hover:before  {
+      background-position: left -34px;
+    }
+    
+    .register-gender input[type="checkbox"]:focus + label:before {
+      background-position: left -65px;
+    }
+    
+    .register-gender input[type="radio"]:hover + label:before,
+    .register-gender input[type="radio"] + label:hover:before {
+      background-position: -36px -34px;
+    }
+    
+    .register-gender input[type="radio"]:focus + label:before {
+      background-position: -36px -65px;
+    }
+    
+    /* CHECKED STYLES */
+    .register-gender input[type="checkbox"]:checked + label:before {
+      background-position: left -133px;
+    }
+    
+    .register-gender input[type="checkbox"]:hover:checked + label:before,
+    .register-gender input[type="checkbox"]:focus:checked + label:before {
+      background-position: left -166px;
+    }
+    
+    .register-gender input[type="checkbox"]:active:checked + label:before {
+      background-position: left -199px;
+    }
+    
+    
+    .register-gender input[type="radio"]:checked + label:before {
+      background-position: -36px -133px;
+    }
+    
+    .register-gender input[type="radio"]:hover:checked + label:before,
+    .register-gender input[type="radio"]:focus:checked + label:before {
+      background-position: -36px -166px;
+      z-index: 3;
+      position: absolute;
+    }
+    
+    .register-gender input[type="radio"]:active:checked + label:before {
+      background-position: -36px -199px;
+    }
+    
+    /* DISABLED STYLES */
+    .register-gender input[type="checkbox"]:disabled + label:before {
+      background-position: left -96px;
+    }
+    
+    .register-gender input[type="radio"]:disabled + label:before {
+      background-position: -36px -96px;
+    }
+    
+    .register-gender input[type="checkbox"]:checked:disabled + label:before {
+      background-position: left -232px;
+    }
+    
+    .register-gender input[type="radio"]:checked:disabled + label:before {
+      background-position: -36px -232px;
+    }
+
+    .register-gender {
+      padding-top: 5px;
+      padding-bottom: 9px;
+    }
+    
+    .register-gender label {
+      color: #999;
+    }
+    .register-gender input + label:hover,
+    .register-gender input:hover + label {
+      color: #555;
+    } 
+    
+    /* DISABLED */
+    .register-gender input:disabled + label {
+      color: #ccc;
+    }
+
+    .register-gender .left-radio {
+      width: 108px;
+      float: left;
+    }
+
+    .register-gender .left-radio input {
+      float: left;
+      margin-right: 10px;
+      width: 15px !important;
+    }
+
+    .register-gender .left-radio label {
+      width: 50px;
+      float: left;
+      font-size: 16px !important;
+      line-height: 22px !important;
+      color: #525d66;
+      font-style: normal !important;
+      font-weight: normal;
+    }
+
+    .register-gender .left-radio p {
+      font-size: 16px;
+      font-weight: normal;
+      color: #525d66;
+      font-style: normal !important;
+    }
+
+    .register-gender .register-date-param {
+      padding-bottom: 63px;
+    }
+
+    .register-gender select {
+      height: 30px;
+      width: 100px;
+      color: #2d3033;
+    }
+
+    .register-gender {
+      height: 60px;
+    }
+
+    .register-gender-label label {
+      margin-top: 5px;
+      color: #525d66 !important;
+    }
+
+     .register-gender select option:first-child {
+      display: none;
+    }
+
+    .two-string label {
+      line-height: 24px !important;
+      margin-top: -7px !important;
+    }
+
+  form .register-button-area button:disabled {
+    background: #fff0c8;
+    border: none;
+    color: #e3dbca;
+    height: 30px;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    cursor: default;
+  }
+
+  form .register-button-area button:disabled:hover {
+    background: #fff0c8;
+    border: none;
+    color: #e3dbca;
+    height: 30px;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    cursor: default;
+  }
+
+  form .register-button-active {
+    background: #ffce49;
+    border: none;
+    color: #a3884e;
+    height: 30px;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  form .register-button-active:hover {
+    background: #ffb931;
+    border: none;
+    color: #81693d;
+    height: 30px;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .register-button-area {
+    margin-top: 11px;
+  }
+
+  .register-date-selector {
+    float: left;
+  }
+
+  .register-tab-container .only-english {
+    width: 124px;
+    padding: 6px 8px 6px 8px;;
+    right: 0;
+    background: #ff686c;
+    color: #ffffff !important;
+    margin-top: 0px !important;
+    position: absolute;
+    border: 1px solid #ff474d;
+    border-radius: 3px;
+    margin-right: 96px;
+    font-style: italic;
+    display: none;
+    box-sizing: content-box;
+  }
+
+  .register-tab-container .only-english:before {
+    content: " ";
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: 0 -150px ;
+    width: 7px;
+    height: 19px;
+    margin-top: -3px;
+    margin-left: -14px;
+    position: absolute;
+  }
+
+  .register-tab-container .active-error .only-english {
+    display: block;
+  }
+
+  .register-tab-container .active-error input {
+   border: 1px solid #ff474d;
+  }
+
+    .register-tab-container .date-error {
+    width: 124px;
+    padding: 6px 8px 6px 8px;;
+    right: 0;
+    background: #ff686c;
+    color: #ffffff !important;
+    margin-top: 0px !important;
+    position: absolute;
+    border: 1px solid #ff474d;
+    border-radius: 3px;
+    margin-right: 42px;
+    font-style: italic;
+    display: none;
+    box-sizing: content-box;
+  }
+
+  .register-tab-container .date-error:before {
+    content: " ";
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: 0 -150px ;
+    width: 7px;
+    height: 19px;
+    margin-top: -3px;
+    margin-left: -14px;
+    position: absolute;
+  }
+
+  .register-tab-container .active-error .date-error {
+    display: block;
+  }
+
+  .register-tab-container .password-weak {
+    width: 124px;
+    padding: 6px 8px 6px 8px;;
+    right: 0;
+    background: #ffffff;
+    color: #ff5a61 !important;
+    margin-top: 0px !important;
+    position: absolute;
+    border: 2px solid #ff474d;
+    border-radius: 3px;
+    margin-right: 96px;
+    font-style: italic;
+    display: none;
+    box-sizing: content-box;
+  }
+
+  .register-tab-container .password-weak:before {
+    content: " ";
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: -1px 0;
+    width: 7px;
+    height: 18px;
+    margin-top: -3px;
+    margin-left: -15px;
+    position: absolute;
+  }
+
+  .register-tab-container .weak-password input {
+   border: 1px solid #ff474d;
+  }
+
+  .weak-password .password-weak {
+    display: block;
+  }
+
+  .register-tab-container .password-good {
+    width: 124px;
+    padding: 6px 8px 6px 8px;;
+    right: 0;
+    background: #ffffff;
+    color: #ffc446 !important;
+    margin-top: 0px !important;
+    position: absolute;
+    border: 2px solid #ffc446;
+    border-radius: 3px;
+    margin-right: 96px;
+    font-style: italic;
+    display: none;
+    box-sizing: content-box;
+  }
+
+  .register-tab-container .password-good:before {
+    content: " ";
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: 0 -100px ;
+    width: 7px;
+    height: 19px;
+    margin-top: -3px;
+    margin-left: -15px;
+    position: absolute;
+  }
+
+  .register-tab-container .good-password .password-good {
+    display: block;
+  }
+
+  .register-tab-container .good-password input {
+   border: 1px solid #ffc446;
+  }
+
+  .register-tab-container .password-strong {
+    width: 124px;
+    padding: 6px 8px 6px 8px;
+    right: 0;
+    background: #ffffff;
+    color: #95da3a !important;
+    margin-top: 0px !important;
+    position: absolute;
+    border: 2px solid #95da3a;
+    border-radius: 3px;
+    margin-right: 96px;
+    font-style: italic;
+    display: none;
+    box-sizing: content-box;
+  }
+
+  .register-tab-container .password-strong:before {
+    content: " ";
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: 0 -50px ;
+    width: 7px;
+    height: 17px;
+    margin-top: -3px;
+    margin-left: -15px;
+    position: absolute;
+  }
+
+  .register-tab-container .strong-password .password-strong {
+    display: block;
+  }
+
+  .register-tab-container .strong-password input {
+   border: 1px solid #95da3a;
+  }
+
+  .register-tab-container .register-form-right .sod_placeholder {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: arial;
+    margin-top: -6px;
+  }
+
+  .register-tab-container .register-form-right .register-date-selector .sod_select {
+    margin-right: 9px;
+  }
+
+  .register-tab-container .register-form-right .register-select-first .sod_select {
+    width: 72px !important;
+    height: 32px;
+  }
+
+  .register-tab-container .register-form-right .register-select-first .sod_select .sod_list {
+    z-index: 5;
+    width: 72px;
+    padding-right: 4px;
+  }
+
+  .register-tab-container .register-form-right .register-select-second .sod_select {
+    width: 130px !important;
+    height: 32px;
+  }
+
+  .register-date-selector .sod_select .sod_label {
+    font-size: 18px;
+    color: #2d3033;
+    position: absolute;
+    margin-top: -6px;
+    font-weight: 400;
+  }
+
+  .register-tab-container .register-form-right .register-select-second .sod_select .sod_list {
+    z-index: 5;
+    width: 130px;
+    height: 205px !important;
+    padding-right: 4px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .register-tab-container .register-form-right .register-select-second .sod_select .sod_list ul {
+    height: 195px !important;
+    max-height: 195px !important;
+  }
+
+  .register-date-selector .sod_select .sod_list {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-top: -31px !important;
+  }
+
+  .register-date-selector .sod_select .sod_list li {
+    font-family: arial;
+    font-size: 16px;
+    color: #2d3033;
+    padding-right: 0px;
+  }
+
+  .register-date-selector .sod_select .sod_list .selected {
+    color: #00aeef;
+  }
+
+  .register-tab-container .register-form-right .register-select-third .sod_select {
+    width: 80px !important;
+    height: 32px;
+  }
+
+  .register-tab-container .register-form-right .register-select-third .sod_select .sod_list {
+    z-index: 5;
+    width: 80px;
+    padding-right: 4px;
+  }
+
+  .register-date-selector .sod_select {
+    height: 32px;
+  }
+
+  .register-select-country .sod_select {
+    width: 245px;
+  }
+
+  .register-select-country .sod_label {
+    overflow: hidden;
+    width: 225px;
+  }
+
+  .register-selector-size .sod_select {
+    width: 245px;
+  }
+
+  .register-selector-size .sod_list {
+    width: 245px;
+    height: 160px;
+    padding-right: 2px;
+  }
+
+  .register-selector-size .sod_list ul {
+    max-height: 150px !important;
+  } 
+
+  .register-select-blood .sod_select {
+    width: 245px;
+  }
+
+  .register-select-blood .sod_list {
+    width: 245px;
+    height: 160px;
+    padding-right: 2px;
+  }
+
+  .register-select-blood .sod_list ul {
+    max-height: 150px !important;
+  } 
+
+   .register-select-country .sod_select .sod_list {
+    height: 200px;
+    width: 245px;
+    z-index: 10 !important;
+    position: absolute;
+    padding-right: 2px;
+  }
+
+  .register-select-country .sod_list ul {
+    max-height: 190px !important;
+    z-index: 5;
+  }
+
+  .register-select-country .sod_list li {
+    z-index: 5;
+  }
+
+  .active-error .sod_select {
+    border: 1px solid #ff474d;
+  }
+
+  .register-sponsor-box {
+    width: 202px;
+    margin-bottom: 8px;
+    border: 1px solid #dde3e6;
+    border-radius: 1px;
+    box-sizing: border-box;
+  }
+
+  .team-leader-register-link {
+    color: #1b4587;
+    font-size: 21px;
+    text-decoration: underline;
+  }
+
+  .team-leader-register-link:hover {
+    color: #1b4587;
+    font-size: 21px;
+    text-decoration: none;
+  }
+
+  .register-button-page2 {
+    margin-bottom: 35px;
+  }
+
+  .register-tabs .tab-content {
+    padding-top: 48px;
+    display: none;
+    // opacity: 0;
+    transition: all 1s linear;
+  }
+
+  .register-tabs .tab-content.active {
+    display: block !important;
+    // opacity: 1;
+    // transition: all 1s ease;
+    // -webkit-transition: all 1s ease;
+    // -moz-transition: all 1s ease;
+    // -o-transition: all 1s ease;
+  }
+
+  .label-error-active input {
+    border: 1px solid #ff474d !important;
+  }
+
+  .register-input-error {
+    visibility: hidden;
+  }
+
+  .label-error-active .register-input-error {
+    min-height: 32px;
+    margin-top: 0;
+    margin-left: 8px;
+    max-width: 135px;
+    border: 2px solid #ff474d;
+    position: static;
+    padding: 5px 8px;
+    border-radius: 3px;
+    float: left;
+    color: #ff474d;
+    visibility: visible;
+  }
+
+  .label-error-active .sod_select {
+    border: 1px solid #ff474d !important;
+    margin-right: 0px !important;
+  }
+
+  .label-error-active .register-input-error:before {
+    content: " ";
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: -1px 0;
+    width: 7px;
+    height: 18px;
+    margin-top: -3px;
+    margin-left: -15px;
+    position: absolute;
+  }
+
+  .register-input-error-red {
+    visibility: hidden;
+  }
+
+  .label-error-active .register-input-error-red {
+    min-height: 32px;
+    max-width: 135px;
+    margin-top: 0;
+    margin-left: 8px;
+    border: 2px solid #ff474d;
+    position: static;
+    padding: 5px 8px;
+    border-radius: 3px;
+    background: #ff686c;
+    float: left;
+    color: #ffffff;
+    visibility: visible;
+  }
+
+  .label-error-active .register-input-error-red:before {
+    content: " ";
+    background: url(../img/register-sprites.png) no-repeat;
+    background-position: 0 -150px ;
+    width: 7px;
+    height: 19px;
+    margin-top: -3px;
+    margin-left: -15px;
+    position: absolute;
+  }
+
+  .register-date-selector > .sod_select {
+    float: left !important;
+  }

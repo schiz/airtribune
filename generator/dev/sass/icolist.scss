@@ -1,0 +1,4 @@
+@import "mixins";
+.ico-news_list-title {
+	@include sprite-ico(16px, 16px, inline-block, middle, 0px, 0px);
+}

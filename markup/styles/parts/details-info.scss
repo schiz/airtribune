@@ -1,0 +1,225 @@
+// start details-event
+.reset-indent-top {
+  margin-top: 0px 10px 15px;
+}
+.event-info {
+  margin-top: 20px;
+  p {
+    padding: 0 11px;
+    line-height: 20px;
+  }
+}
+.event-info_img-block {
+  margin: 29px 0 12px;
+  .col-md-3 {
+    margin-top: 2px;
+  }
+}
+.flying-site {
+  margin-top: 10px;
+  p {
+    margin: 20px 10px;
+    line-height: 20px;
+    &.flying-text-indent {
+      margin-top: 10px;
+    }
+    a {
+      color: #0098d1;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.block-organizers {
+  margin-top: 10px;
+  .header-part {
+    margin-bottom: 0;
+  }
+  .organizers-block {
+    .col-md-4 {
+      margin-top: 20px;
+      &:nth-child(3n) {
+        padding: 0 24px;
+      }
+      &:nth-child(3n+1) {
+        clear: left;
+        padding: 0 10px;
+      }
+      .organaize-img-wrap {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        border: 1px solid #a2afb5;
+        @include border-radius(3px);
+        vertical-align: middle;
+        line-height: 77px;
+        text-align: center;
+      }
+      .organizers-title_small {
+        vertical-align: bottom;
+        color: #3d464c;
+        font: bold 14px/14px Arial,Helvetica,sans-serif;
+        display: inline-block;
+        width: 230px;
+        margin: 12px 0 0 0;
+      }
+      .organizers-info-wrap {
+        margin-top: 16px;
+        .row {
+          margin-top: 5px;
+          font-size: 14px;
+          line-height: 1;
+          &.row-indenttop {
+            margin-top: 10px;
+          }
+          a {
+            color: #1ca3d6;;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.block-selection_fee {
+  margin-top: 53px;
+  .selection_fee {
+    margin-left: 11px;
+    p {
+      margin: 0px 0 18px;
+      line-height: 20px;
+    }
+  }
+}
+.block-rules {
+  margin: 14px 0 32px;
+  .rules {
+    margin-left: 11px;
+  }
+  .download-list {
+    margin-top: 8px;
+  }
+}
+.block-prize-categories {
+  margin-top: 10px;
+  .prize-categories {
+    margin-left: 11px;
+    p {
+      line-height: 20px;
+    }
+    .prize-list {
+      margin-top: 38px;
+    }
+  }
+}
+.block-schedule-wrap {
+  margin-top: 21px;
+  .col-indent-left {
+    padding-left: 10px;
+  }
+  .col-indent-right {
+    padding-right: 10px;
+  }
+  p {
+    margin: 0 11px 18px 11px;
+    line-height: 20px;
+  }
+}
+.block-how_to_get {
+  margin-top: 13px;
+  .how_to_get {
+    margin: 0 11px;
+    p {
+      margin: 3px 0;
+      &.p-reset {
+        margin-top: 0;
+      }
+      &.map-text-left {
+        margin: 0 0 3px 12px;
+      }
+      &.transpoert-text {
+        margin-left: 7px;
+        margin-bottom: 20px;
+        line-height: 20px;
+      }
+      &.transpoert-text-left {
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .how_to_get-map {
+    margin-top: 56px;
+  }
+  .how_to_get-transport {
+    margin: 11px 0 0;
+    .how_to_get-transport-title {
+      padding: 5px 0 27px 44px;
+      background: url("../img/events/icons_transport.png") no-repeat;
+      color: #333a40;
+      font-size: 24px;
+      margin-left: 3px;
+      display: block;
+      text-transform: none;
+      &.plane {
+        background-position: -2px -500px;
+      }
+      &.car {
+        background-position: -2px -700px;
+        padding-left: 46px;
+      }
+      &.taxi {
+        margin-top: 42px;
+        padding-left: 47px;
+        background-position: -2px -900px;
+      }
+      &.bus {
+        background-position: -2px -800px;
+        margin-top: 42px;
+      }
+    }
+    p {
+      a {
+        color: #0098d1;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.block-downloads-wrap {
+  margin-top: 21px;
+  .block-downloads {
+    margin-left: 15px;
+    margin-top: 12px;
+    .download-list {
+      position: relative;
+      left: -10px;
+      li {
+        width: 340px;
+        // padding-left: 15px;
+        vertical-align: top;
+        margin-top: 5px;
+        .downloads-item-text {
+          display: inline;
+          line-height: 10px;
+        }
+      }
+    }
+  }
+}
+.block-contacts-wrap {
+  margin-top: 25px;
+  .contacts-list {
+    margin-left: 6px;
+  }
+}
+// end details-event
